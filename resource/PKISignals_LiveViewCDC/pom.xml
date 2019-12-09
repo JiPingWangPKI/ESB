@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- vim: set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab : -->
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.pki</groupId>
+    <artifactId>PKISignals_LiveView</artifactId>
+    <packaging>ep-liveview-fragment</packaging>
+    <version>0.1</version>
+    <name>PKISignals_LiveView</name>
+
+    <!-- common definitions for this version of StreamBase -->
+    <parent>
+        <groupId>com.tibco.ep.sb.parent</groupId>
+        <artifactId>ep-liveview-fragment</artifactId>
+        <version>10.3.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.tibco.ep.lvweb</groupId>
+            <artifactId>lvweb</artifactId>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+        	<groupId>com.tibco.ep.sb.adapter</groupId>
+        	<artifactId>change-data-capture</artifactId>
+        	<version>10.3.0</version>
+        </dependency>
+        <dependency>
+    		<groupId>com.microsoft.sqlserver</groupId>
+    		<artifactId>sqljdbc4</artifactId>
+   	 		<version>4.0</version>
+</dependency>
+    </dependencies>
+
+</project>

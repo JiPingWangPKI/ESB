@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><application-layout>
+    <component name="InputAdapter">
+        <param name="gui:x" value="-123"/>
+        <param name="gui:y" value="36"/>
+    </component>
+    <component name="Map">
+        <param name="gui:x" value="54"/>
+        <param name="gui:y" value="92"/>
+        <param name="gui:bends:1" value="-23,76;-13,122"/>
+    </component>
+    <component name="OutputAdapterCopy">
+        <param name="gui:x" value="54"/>
+        <param name="gui:y" value="-4"/>
+        <param name="gui:bends:1" value="-8,56;-2,26"/>
+    </component>
+    <component name="DataOut">
+        <param name="gui:x" value="179"/>
+        <param name="gui:y" value="92"/>
+    </component>
+    <component name="OutputStreamCopy">
+        <param name="gui:x" value="179"/>
+        <param name="gui:y" value="-4"/>
+    </component>
+</application-layout>

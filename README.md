@@ -1,8 +1,9 @@
+[toc]
 # 一：项目介绍
 ## 1.1 项目简介
 	上海仁济南院需要搭建一个集成平台，需要接入各个业务系统中转，并做业务数据的实时分析和预警，为此streambase可以担任ESB数据总线的角色；现稳定运行于上海仁济南院，中转HIS与业务系统LIS、UIS、RIS等的信息交互中转站、再结合spotfire做业务数据的分析和实时预警
 ## 1.2 测试环境地址
-1）[www.webxml.com.cn的ESB中转服务](http://47.103.133.15:8001/WebServices/StockInfoWS.asmx?wsdl)
+1）[www.webxml.com.cn的ESB中转服务](http://47.103.133.15:8881/WebServices/StockInfoWS.asmx?wsdl)
 
 2）[实时业务数据的LiveView平台](http://47.103.133.15:10070/lvweb/#/login)(username:xiaoping;password:xiaoping)
 
@@ -36,10 +37,8 @@
 	方式一：安装包中修改配置，打开PKISignals_app-0.0.1-SNAPSHOT-ep-application.zip看到的配置文件和打开内部压缩包com.perkinelmer-PKISignals-0.0.1-SNAPSHOT-ep-liveview-fragment.zip后看到的配置文件
 	方式二：项目运行为window service后会根据我们按照window serivce的脚本会出现一个节点文件夹A.X，打开找到路径C:\java\streambase\A.X\application\fragments\com.perkinelmer.PKISignals下的配置文件；C:\java\streambase\A.X\application\shared下的配置文件
 	具体哪些配置文件改哪些参数请看下图
-![配置文件集一](https://raw.githubusercontent.com/JiPingWangPKI/ESB/tree/master/resource/LiveViewPConfigs.png)
-![配置文件集二](https://raw.githubusercontent.com/JiPingWangPKI/ESB/tree/master/resource/SBApplicationConfigs.png)
+![配置文件集一](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/LiveViewPConfigs.png?token=AJNF2DZPJB3SNNPVJVJ2KRK55X3F4)
+![配置文件集二](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/SBApplicationConfigs.png?token=AJNF2D2W5V4XCKAL2IHL3UK55X3IE)
 # 四：开发手册
-## 4.1[Streambase开发手册](https://github.com/JiPingWangPKI/ESB/tree/master/resource/streambase开发手册.md)
-## 4.2[StreambaseLiveView开发手册](https://github.com/JiPingWangPKI/ESB/tree/master/resource/streambaseLiveView开发手册.md)
-
-
+## 4.1[Streambase开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambase开发手册.md)
+## 4.2[StreambaseLiveView开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambaseLiveView开发手册.md)

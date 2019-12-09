@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modify version="10.3.0_0d7585e34d7951c38306c510b7c74a27a27fb955">
+    <add>
+        <annotations>
+            <annotation name="hygienic"/>
+        </annotations>
+        <type-metadata>
+            <param name="type" value="module"/>
+            <param name="fully-qualified-name" value="com.perkinelmer.pkisignals.DBListener"/>
+        </type-metadata>
+        <memory-model-settings/>
+        <dynamic-variables/>
+        <box name="InputAdapter" type="inputadapter">
+            <output port="1" stream="out:InputAdapter_1"/>
+            <output port="2" stream="out:InputAdapter_2"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.cdc.ChangeDataCapture"/>
+            <param name="databaseHost" value="172.26.11.18"/>
+            <param name="databaseName" value="wsm"/>
+            <param name="databasePassword" value="pki.123"/>
+            <param name="databasePort" value="1433"/>
+            <param name="databaseType" value="SQLServer"/>
+            <param name="databaseUser" value="sa"/>
+            <param name="jdbcURL" value=""/>
+            <param name="logLevel" value="INFO"/>
+            <param name="schema" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;schema&gt;&#13;&#10;    &lt;field name=&quot;SerialNo&quot; type=&quot;int&quot;/&gt;&#13;&#10;    &lt;field name=&quot;RequestId&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;ServiceName&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;RequestIPAddress&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;SoapAction&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;StartDt&quot; type=&quot;timestamp&quot;/&gt;&#13;&#10;    &lt;field name=&quot;EndDt&quot; type=&quot;timestamp&quot;/&gt;&#13;&#10;    &lt;field name=&quot;MessageInfo&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;MessageResponse&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;Status&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;RemoteServer&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;StreamBaseServer&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;SubScription_Id&quot; type=&quot;int&quot;/&gt;&#13;&#10;    &lt;field name=&quot;MessageType&quot; type=&quot;string&quot;/&gt;&#13;&#10;    &lt;field name=&quot;WSInterval&quot; type=&quot;int&quot;/&gt;&#13;&#10;    &lt;field name=&quot;WorkFlowName&quot; type=&quot;string&quot;/&gt;&#13;&#10;&lt;/schema&gt;&#13;&#10;"/>
+            <param name="tableName" value="CallLogs"/>
+        </box>
+        <box name="Map" type="map">
+            <input port="1" stream="out:InputAdapter_2"/>
+            <output port="1" stream="DataOut"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <remove field="_Operation"/>
+                    <remove field="_CommitSeqNum"/>
+                    <remove field="_SubSeqNum"/>
+                    <remove field="_UpdateMask"/>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="OutputAdapterCopy" type="outputadapter">
+            <input port="1" stream="out:InputAdapter_1"/>
+            <output port="1" stream="OutputStreamCopy"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.logger.Log"/>
+            <param name="CaptureStrategy" value="FLATTEN"/>
+            <param name="asyncEnabled" value="true"/>
+            <param name="compressFrequentMessages" value="false"/>
+            <param name="compressMaxWindowSize" value="5.0"/>
+            <param name="customFormat" value=""/>
+            <param name="customFormatExpression" value=""/>
+            <param name="customFormatType" value="Basic"/>
+            <param name="emitLoggedTuples" value="true"/>
+            <param name="encodeSubType" value="Map"/>
+            <param name="hexEncodeBlobs" value="false"/>
+            <param name="includeNullFields" value="false"/>
+            <param name="logLevel" value="Info"/>
+            <param name="logLevelOverrideFieldName" value=""/>
+            <param name="loggerFormatType" value="CSV"/>
+            <param name="messageIdentifier" value="Logger"/>
+            <param name="messageIdentifierExpression" value=""/>
+            <param name="messageIdentifierType" value="Basic"/>
+            <param name="messagePrefix" value=""/>
+            <param name="quoteNullStrings" value="true"/>
+            <param name="timestampAsLong" value="false"/>
+            <param name="timestampFormat" value="yyyy-MM-dd HH:mm:ss.SSSZ"/>
+            <param name="verbose" value="false"/>
+        </box>
+        <output-stream name="DataOut" scope="public"/>
+        <output-stream name="OutputStreamCopy"/>
+    </add>
+</modify>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sbfs:Simulation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sbfs="http://www.streambase.com/schemas/feedsim/02/SBFS">
+  <SimStreams Name="DataOut">
+    <ProcessingOptions TimeSynchronized="true"/>
+    <Schema>
+      <Fields Name="SerialNo" DataTypeName="int" Description="">
+        <Distribution GenerationMethod="Random"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="RequestId" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="ServiceName" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="RequestIPAddress" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="SoapAction" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="StartDt" DataTypeName="timestamp" Description="">
+        <Distribution GenerationMethod="Random"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="EndDt" DataTypeName="timestamp" Description="">
+        <Distribution GenerationMethod="Random"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="MessageInfo" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="MessageResponse" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="Status" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="RemoteServer" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="StreamBaseServer" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="SubScription_Id" DataTypeName="int" Description="">
+        <Distribution GenerationMethod="Random"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="MessageType" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="WSInterval" DataTypeName="int" Description="">
+        <Distribution GenerationMethod="Random"/>
+        <DataSourceMapping/>
+      </Fields>
+      <Fields Name="WorkFlowName" DataTypeName="string" Description="">
+        <Distribution GenerationMethod="RandomString"/>
+        <DataSourceMapping/>
+      </Fields>
+    </Schema>
+  </SimStreams>
+</sbfs:Simulation>
