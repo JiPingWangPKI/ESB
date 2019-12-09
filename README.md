@@ -37,8 +37,8 @@
 	方式一：安装包中修改配置，打开PKISignals_app-0.0.1-SNAPSHOT-ep-application.zip看到的配置文件和打开内部压缩包com.perkinelmer-PKISignals-0.0.1-SNAPSHOT-ep-liveview-fragment.zip后看到的配置文件
 	方式二：项目运行为window service后会根据我们按照window serivce的脚本会出现一个节点文件夹A.X，打开找到路径C:\java\streambase\A.X\application\fragments\com.perkinelmer.PKISignals下的配置文件；C:\java\streambase\A.X\application\shared下的配置文件
 	具体哪些配置文件改哪些参数请看下图
-![配置文件集一](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/LiveViewPConfigs.png?token=AJNF2DZPJB3SNNPVJVJ2KRK55X3F4)
-![配置文件集二](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/SBApplicationConfigs.png?token=AJNF2D2W5V4XCKAL2IHL3UK55X3IE)
+![配置文件集一](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/SBApplicationConfigs.png?token=AJNF2D52UH46C7YKBOP3TWK55YF7A)
+![配置文件集二](https://raw.githubusercontent.com/JiPingWangPKI/ESB/master/resource/SBApplicationConfigs.png?token=AJNF2DY2Q3NSB6ODILZ7RKS55YGBY)
 # 四：开发手册
 ## 4.1[Streambase开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambase开发手册.md)
 ## 4.2[StreambaseLiveView开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambaseLiveView开发手册.md)
