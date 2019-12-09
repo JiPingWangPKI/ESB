@@ -1,0 +1,35 @@
+  ------
+  Using
+  ------
+
+Using
+
+  This component is available via maven.  Include in your pom.xml file the
+  following :-
+
+---
+    <project>
+        ...
+        <dependencies>
+            <dependency>
+                <groupId>com.perkinelmer</groupId>
+                <artifactId>PKISignals_app</artifactId>
+                <type>zip</type>
+                <classifier>ep-application</classifier>
+            </dependency>
+            ...
+        </dependencies>
+        ...
+        <dependencyManagement>
+            <dependencies>
+                <dependency>
+                     <groupId>com.perkinelmer</groupId>
+                     <artifactId>PKISignals_app</artifactId>
+                     <version>0.0.1-SNAPSHOT</version>
+                 </dependency>
+                 ...
+             </dependencies>
+        </dependencyManagement>
+        ...
+    </project>
+---

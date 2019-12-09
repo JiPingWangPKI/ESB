@@ -1,0 +1,767 @@
+2018-07-17 11:24:22 [LogBack INFO] log - Logging initialized @16064ms
+2018-07-17 11:24:24 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-07-17 11:24:24 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 11:24:24 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@45312be2{/,null,AVAILABLE}
+2018-07-17 11:24:24 [LogBack INFO] ServerConnector - Started ServerConnector@6f63b475{HTTP/1.1}{0.0.0.0:8882}
+2018-07-17 11:24:24 [LogBack INFO] Server - Started @17833ms
+2018-07-17 11:24:24 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-07-17 11:24:24 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=6496; version=7.6.7; Listening
+2018-07-17 11:24:45 [LogBack INFO] log - Logging initialized @14192ms
+2018-07-17 11:24:47 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-07-17 11:24:47 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 11:24:47 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-07-17 11:24:47 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-07-17 11:24:47 [LogBack INFO] Server - Started @15995ms
+2018-07-17 11:24:47 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-07-17 11:24:47 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=7748; version=7.6.7; Listening
+2018-07-17 14:09:04 [LogBack INFO] log - Logging initialized @12544ms
+2018-07-17 14:09:06 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-07-17 14:09:06 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 14:09:06 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-07-17 14:09:06 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-07-17 14:09:06 [LogBack INFO] Server - Started @14614ms
+2018-07-17 14:09:06 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-07-17 14:09:06 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=7124; version=7.6.7; Listening
+2018-07-17 14:09:25 [LogBack INFO] log - Logging initialized @13040ms
+2018-07-17 14:09:27 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-07-17 14:09:27 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 14:09:27 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-07-17 14:09:27 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-07-17 14:09:27 [LogBack INFO] Server - Started @14791ms
+2018-07-17 14:09:27 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-07-17 14:09:27 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10004; pid=10188; version=7.6.7; Listening
+2018-07-17 14:09:47 [LogBack INFO] log - Logging initialized @13868ms
+2018-07-17 14:09:49 [LogBack INFO] WSInputAdapter - Starting web server on port 8885
+2018-07-17 14:09:49 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 14:09:49 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-07-17 14:09:49 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8885}
+2018-07-17 14:09:49 [LogBack INFO] Server - Started @15929ms
+2018-07-17 14:09:49 [LogBack INFO] WSInputAdapter - Web server started on port 8885
+2018-07-17 14:09:49 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10005; pid=11400; version=7.6.7; Listening
+2018-07-17 14:10:08 [LogBack INFO] log - Logging initialized @13251ms
+2018-07-17 14:10:10 [LogBack INFO] WSInputAdapter - Starting web server on port 8886
+2018-07-17 14:10:10 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-07-17 14:10:10 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-07-17 14:10:10 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8886}
+2018-07-17 14:10:10 [LogBack INFO] Server - Started @15168ms
+2018-07-17 14:10:10 [LogBack INFO] WSInputAdapter - Web server started on port 8886
+2018-07-17 14:10:10 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10006; pid=12648; version=7.6.7; Listening
+2018-08-05 13:32:05 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 13:32:06 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 13:32:06 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:32:06 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 13:32:06 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 13:32:06 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=7124; version=7.6.7; StreamBaseServer shut down
+2018-08-05 13:35:13 [LogBack INFO] log - Logging initialized @13290ms
+2018-08-05 13:35:15 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 13:35:15 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 13:35:15 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 13:35:15 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:35:15 [LogBack INFO] Server - Started @15221ms
+2018-08-05 13:35:15 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 13:35:15 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=9408; version=7.6.7; Listening
+2018-08-05 13:35:47 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 13:35:47 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 13:35:47 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:35:47 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 13:35:47 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 13:35:47 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=9408; version=7.6.7; StreamBaseServer shut down
+2018-08-05 13:37:27 [LogBack INFO] log - Logging initialized @13283ms
+2018-08-05 13:37:29 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 13:37:29 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 13:37:29 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 13:37:29 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:37:29 [LogBack INFO] Server - Started @15140ms
+2018-08-05 13:37:29 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 13:37:29 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=9932; version=7.6.7; Listening
+2018-08-05 13:37:32 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 13:37:33 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 13:37:33 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:37:33 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 13:37:33 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 13:37:33 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=9932; version=7.6.7; StreamBaseServer shut down
+2018-08-05 13:38:17 [LogBack INFO] log - Logging initialized @13210ms
+2018-08-05 13:38:19 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 13:38:19 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 13:38:19 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 13:38:19 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:38:19 [LogBack INFO] Server - Started @15295ms
+2018-08-05 13:38:19 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 13:38:19 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=6992; version=7.6.7; Listening
+2018-08-05 13:38:19 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 13:38:20 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 13:38:20 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 13:38:20 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 13:38:20 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 13:38:20 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=6992; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:14:10 [LogBack INFO] log - Logging initialized @13659ms
+2018-08-05 14:14:12 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 14:14:12 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:14:12 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:14:12 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:14:12 [LogBack INFO] Server - Started @15689ms
+2018-08-05 14:14:12 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 14:14:12 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=9712; version=7.6.7; Listening
+2018-08-05 14:14:25 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:14:25 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 14:14:25 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:14:25 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:14:25 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 14:14:25 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=9712; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:14:57 [LogBack INFO] log - Logging initialized @12877ms
+2018-08-05 14:14:59 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 14:14:59 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:14:59 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:14:59 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:14:59 [LogBack INFO] Server - Started @15117ms
+2018-08-05 14:14:59 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 14:14:59 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=6048; version=7.6.7; Listening
+2018-08-05 14:15:17 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:15:17 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 14:15:17 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:15:17 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:15:17 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 14:15:17 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=6048; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:15:40 [LogBack INFO] log - Logging initialized @13256ms
+2018-08-05 14:15:42 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 14:15:42 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:15:42 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:15:42 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:15:42 [LogBack INFO] Server - Started @15157ms
+2018-08-05 14:15:42 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 14:15:42 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=5320; version=7.6.7; Listening
+2018-08-05 14:15:51 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:15:51 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-05 14:15:51 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:15:51 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:15:51 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-05 14:15:51 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=5320; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:16:08 [LogBack INFO] log - Logging initialized @13384ms
+2018-08-05 14:16:10 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-05 14:16:10 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:16:10 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:16:10 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-05 14:16:10 [LogBack INFO] Server - Started @15370ms
+2018-08-05 14:16:10 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-05 14:16:10 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=8992; version=7.6.7; Listening
+2018-08-05 14:41:49 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:41:50 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-05 14:41:50 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:41:50 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:41:50 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-05 14:41:50 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=7748; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:42:06 [LogBack INFO] log - Logging initialized @12850ms
+2018-08-05 14:42:07 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-05 14:42:07 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:42:07 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:42:08 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:42:08 [LogBack INFO] Server - Started @14861ms
+2018-08-05 14:42:08 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-05 14:42:08 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=7736; version=7.6.7; Listening
+2018-08-05 14:42:51 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:42:51 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-05 14:42:51 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:42:51 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:42:51 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-05 14:42:51 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=7736; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:43:07 [LogBack INFO] log - Logging initialized @13396ms
+2018-08-05 14:43:09 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-05 14:43:09 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:43:09 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:43:09 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:43:09 [LogBack INFO] Server - Started @15373ms
+2018-08-05 14:43:09 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-05 14:43:09 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=15776; version=7.6.7; Listening
+2018-08-05 14:44:16 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:44:16 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-05 14:44:17 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:44:17 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:44:17 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-05 14:44:17 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=15776; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:44:35 [LogBack INFO] log - Logging initialized @13722ms
+2018-08-05 14:44:37 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-05 14:44:37 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:44:37 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:44:37 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:44:37 [LogBack INFO] Server - Started @16148ms
+2018-08-05 14:44:37 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-05 14:44:37 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=16012; version=7.6.7; Listening
+2018-08-05 14:45:07 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:45:07 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-05 14:45:07 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:45:07 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-05 14:45:07 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-05 14:45:07 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=16012; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:45:23 [LogBack INFO] log - Logging initialized @12887ms
+2018-08-05 14:45:25 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-05 14:45:25 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:45:25 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-05 14:45:25 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-05 14:45:25 [LogBack INFO] Server - Started @14780ms
+2018-08-05 14:45:25 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-05 14:45:25 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=15828; version=7.6.7; Listening
+2018-08-05 14:46:53 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:47:14 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:48:00 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:48:57 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:48:57 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-05 14:48:57 [LogBack INFO] ServerConnector - Stopped ServerConnector@6f63b475{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:48:57 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@45312be2{/,null,UNAVAILABLE}
+2018-08-05 14:48:57 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-05 14:48:57 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=6496; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:49:12 [LogBack INFO] log - Logging initialized @12823ms
+2018-08-05 14:49:14 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-05 14:49:14 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:49:14 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@41e68d87{/,null,AVAILABLE}
+2018-08-05 14:49:14 [LogBack INFO] ServerConnector - Started ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:49:14 [LogBack INFO] Server - Started @14853ms
+2018-08-05 14:49:14 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-05 14:49:14 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=7980; version=7.6.7; Listening
+2018-08-05 14:50:19 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:28 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:40 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:48 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:50:49 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-05 14:50:49 [LogBack INFO] ServerConnector - Stopped ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:50:49 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@41e68d87{/,null,UNAVAILABLE}
+2018-08-05 14:50:49 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-05 14:50:49 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=7980; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:51:05 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=15676; version=7.6.7; Listening
+2018-08-05 14:51:18 [LogBack INFO] log - Logging initialized @17485ms
+2018-08-05 14:51:19 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-05 14:51:19 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:51:19 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@346f3db7{/,null,AVAILABLE}
+2018-08-05 14:51:19 [LogBack INFO] ServerConnector - Started ServerConnector@194fbc7c{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:51:19 [LogBack INFO] Server - Started @19033ms
+2018-08-05 14:51:19 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-05 14:52:39 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:58:25 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-05 14:58:25 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-05 14:58:25 [LogBack INFO] ServerConnector - Stopped ServerConnector@194fbc7c{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:58:25 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@346f3db7{/,null,UNAVAILABLE}
+2018-08-05 14:58:25 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-05 14:58:25 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=15676; version=7.6.7; StreamBaseServer shut down
+2018-08-05 14:59:00 [LogBack INFO] log - Logging initialized @12005ms
+2018-08-05 14:59:02 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-05 14:59:02 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-05 14:59:02 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@41e68d87{/,null,AVAILABLE}
+2018-08-05 14:59:02 [LogBack INFO] ServerConnector - Started ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-05 14:59:02 [LogBack INFO] Server - Started @13731ms
+2018-08-05 14:59:02 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-05 14:59:02 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=8472; version=7.6.7; Listening
+2018-08-06 09:29:27 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:29:48 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:30:01 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:30:22 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:34:02 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:34:23 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:42:54 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 09:42:59 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:42:59 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-06 09:42:59 [LogBack INFO] ServerConnector - Stopped ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:42:59 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@41e68d87{/,null,UNAVAILABLE}
+2018-08-06 09:42:59 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-06 09:42:59 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=8472; version=7.6.7; StreamBaseServer shut down
+2018-08-06 09:43:14 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=6756; version=7.6.7; Listening
+2018-08-06 09:43:26 [LogBack INFO] log - Logging initialized @17080ms
+2018-08-06 09:43:27 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 09:43:27 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 09:43:27 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2c5cc97f{/,null,AVAILABLE}
+2018-08-06 09:43:27 [LogBack INFO] ServerConnector - Started ServerConnector@11394350{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:43:27 [LogBack INFO] Server - Started @18292ms
+2018-08-06 09:43:27 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-06 09:44:50 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:48:14 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:48:14 [LogBack WARN] RuntimeEnv - Error at operator: default.OutputAdapterGET, port: 0, tuple: {"RemoteServer":"172.26.82.208:8800","StreamBaseServer":"172.26.11.18:8882","RequestId":"9a3f78d5-b60e-4267-a27b-18957e7dad7d","RequestData":"","ResponseData":"http://172.26.82.208:8800/favicon.ico?WSDL: [Ljava.lang.StackTraceElement;@533cc1f4","Status":"Fail","ServiceName":"/favicon.ico","RequestIPAddress":"172.26.80.12","SoapAction":"","StartDt":1781921648229733,"WSInterval":8,"MessageInfo":"","MessageType":"GET","SubScriptionId":"1","EndDt":1781921657958274,"WorkFlowName":"8882_RISToHIS"}, exception: Adapter Exception: java.lang.IllegalStateException: AsyncContext completed
+2018-08-06 09:48:14 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 09:48:14 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-06 09:48:14 [LogBack INFO] ServerConnector - Stopped ServerConnector@11394350{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:48:14 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2c5cc97f{/,null,UNAVAILABLE}
+2018-08-06 09:48:14 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-06 09:48:14 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=6756; version=7.6.7; StreamBaseServer shut down
+2018-08-06 09:56:21 [LogBack INFO] log - Logging initialized @14033ms
+2018-08-06 09:56:23 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 09:56:23 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 09:56:23 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@29526c05{/,null,AVAILABLE}
+2018-08-06 09:56:23 [LogBack INFO] ServerConnector - Started ServerConnector@3ad2e17{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:56:23 [LogBack INFO] Server - Started @16108ms
+2018-08-06 09:56:23 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-06 09:56:24 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=9608; version=7.6.7; Listening
+2018-08-06 09:56:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:56:50 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:56:54 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:58:26 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 09:58:26 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-06 09:58:26 [LogBack INFO] ServerConnector - Stopped ServerConnector@3ad2e17{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:58:26 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@29526c05{/,null,UNAVAILABLE}
+2018-08-06 09:58:26 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-06 09:58:26 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=9608; version=7.6.7; StreamBaseServer shut down
+2018-08-06 09:59:06 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=3248; version=7.6.7; Listening
+2018-08-06 09:59:17 [LogBack INFO] log - Logging initialized @15594ms
+2018-08-06 09:59:18 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 09:59:18 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 09:59:18 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@6ecc9d5{/,null,AVAILABLE}
+2018-08-06 09:59:18 [LogBack INFO] ServerConnector - Started ServerConnector@67560519{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 09:59:18 [LogBack INFO] Server - Started @16660ms
+2018-08-06 09:59:18 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-06 10:16:31 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:16:31 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:34:52 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=6776; version=7.6.7; Listening
+2018-08-06 10:35:03 [LogBack INFO] log - Logging initialized @15677ms
+2018-08-06 10:35:03 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 10:35:03 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:35:03 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@4b4968f9{/,null,AVAILABLE}
+2018-08-06 10:35:04 [LogBack INFO] ServerConnector - Started ServerConnector@64f81e03{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 10:35:04 [LogBack INFO] Server - Started @16655ms
+2018-08-06 10:35:04 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-06 10:36:49 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:42:51 [LogBack INFO] log - Logging initialized @13509ms
+2018-08-06 10:42:52 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 10:42:52 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:42:53 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@41e68d87{/,null,AVAILABLE}
+2018-08-06 10:42:53 [LogBack WARN] AbstractLifeCycle - FAILED ServerConnector@49ff7d8c{HTTP/1.1}{0.0.0.0:8882}: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) [na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-06 10:42:53 [LogBack WARN] AbstractLifeCycle - FAILED org.eclipse.jetty.server.Server@3d3e5463: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) [na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-06 10:42:53 [LogBack ERROR] WSInputAdapter - Failed to start the web server on port 8882
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) ~[na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-06 10:42:53 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=16348; version=7.6.7; Listening
+2018-08-06 10:45:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:45:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:45:33 [LogBack WARN] RuntimeEnv - Error at operator: default.OutputAdapterGET, port: 0, tuple: {"RemoteServer":"172.26.82.208:8800","StreamBaseServer":"172.26.11.18:8882","RequestId":"3daf90d0-13c7-4e81-bc4c-5adc63c5d28f","RequestData":"","ResponseData":"http://172.26.82.208:8800/favicon.ico?WSDL: [Ljava.lang.StackTraceElement;@ed2680a","Status":"Fail","ServiceName":"/favicon.ico","RequestIPAddress":"172.26.80.12","SoapAction":"","StartDt":1784770746591675,"WSInterval":6,"MessageInfo":"","MessageType":"GET","SubScriptionId":"1","EndDt":1785360711083531,"WorkFlowName":"8882_RISToHIS"}, exception: Adapter Exception: java.lang.IllegalStateException: AsyncContext completed
+2018-08-06 10:45:33 [LogBack WARN] RuntimeEnv - Error at operator: default.OutputAdapterGET, port: 0, tuple: {"RemoteServer":"172.26.82.208:8800","StreamBaseServer":"172.26.11.18:8882","RequestId":"1e2caf8e-7662-49ba-9c93-e6b72c27fcc7","RequestData":"","ResponseData":"http://172.26.82.208:8800/favicon.ico?WSDL: [Ljava.lang.StackTraceElement;@20992058","Status":"Fail","ServiceName":"/favicon.ico","RequestIPAddress":"172.26.80.12","SoapAction":"","StartDt":1784800753679168,"WSInterval":6,"MessageInfo":"","MessageType":"GET","SubScriptionId":"1","EndDt":1785360711246401,"WorkFlowName":"8882_RISToHIS"}, exception: Adapter Exception: java.lang.IllegalStateException: AsyncContext completed
+2018-08-06 10:45:33 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:45:33 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-06 10:45:33 [LogBack INFO] ServerConnector - Stopped ServerConnector@64f81e03{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 10:45:33 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@4b4968f9{/,null,UNAVAILABLE}
+2018-08-06 10:45:33 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-06 10:45:33 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=6776; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:45:38 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:45:38 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-06 10:45:38 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-06 10:45:38 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-06 10:45:38 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-06 10:45:38 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=15828; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:45:53 [LogBack INFO] log - Logging initialized @12992ms
+2018-08-06 10:45:55 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-06 10:45:55 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:45:55 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-06 10:45:55 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-06 10:45:55 [LogBack INFO] Server - Started @14899ms
+2018-08-06 10:45:55 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-06 10:45:55 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=16436; version=7.6.7; Listening
+2018-08-06 10:46:30 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:46:30 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=16348; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:46:46 [LogBack INFO] log - Logging initialized @13593ms
+2018-08-06 10:46:47 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-06 10:46:47 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:46:48 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@41e68d87{/,null,AVAILABLE}
+2018-08-06 10:46:48 [LogBack INFO] ServerConnector - Started ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-06 10:46:48 [LogBack INFO] Server - Started @15336ms
+2018-08-06 10:46:48 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-06 10:46:48 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=7828; version=7.6.7; Listening
+2018-08-06 10:46:54 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:46:54 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-06 10:46:54 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-06 10:46:54 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-06 10:46:54 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-06 10:46:54 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=8992; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:47:09 [LogBack INFO] log - Logging initialized @12539ms
+2018-08-06 10:47:11 [LogBack INFO] WSInputAdapter - Starting web server on port 8883
+2018-08-06 10:47:11 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:47:11 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-06 10:47:11 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-06 10:47:11 [LogBack INFO] Server - Started @14553ms
+2018-08-06 10:47:11 [LogBack INFO] WSInputAdapter - Web server started on port 8883
+2018-08-06 10:47:11 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10003; pid=7884; version=7.6.7; Listening
+2018-08-06 10:47:15 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:47:16 [LogBack INFO] WSInputAdapter - Stopping web server on port 8884
+2018-08-06 10:47:16 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-06 10:47:16 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-06 10:47:16 [LogBack INFO] WSInputAdapter - Web server stopped on port 8884
+2018-08-06 10:47:16 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10004; pid=10188; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:47:30 [LogBack INFO] log - Logging initialized @12546ms
+2018-08-06 10:47:32 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-06 10:47:32 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:47:32 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-06 10:47:32 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-06 10:47:32 [LogBack INFO] Server - Started @14436ms
+2018-08-06 10:47:32 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-08-06 10:47:32 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10004; pid=7528; version=7.6.7; Listening
+2018-08-06 10:47:39 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:47:39 [LogBack INFO] WSInputAdapter - Stopping web server on port 8885
+2018-08-06 10:47:39 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8885}
+2018-08-06 10:47:39 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-06 10:47:39 [LogBack INFO] WSInputAdapter - Web server stopped on port 8885
+2018-08-06 10:47:39 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10005; pid=11400; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:47:54 [LogBack INFO] log - Logging initialized @12837ms
+2018-08-06 10:47:56 [LogBack INFO] WSInputAdapter - Starting web server on port 8885
+2018-08-06 10:47:56 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:47:56 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-06 10:47:56 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8885}
+2018-08-06 10:47:56 [LogBack INFO] Server - Started @14789ms
+2018-08-06 10:47:56 [LogBack INFO] WSInputAdapter - Web server started on port 8885
+2018-08-06 10:47:56 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10005; pid=2528; version=7.6.7; Listening
+2018-08-06 10:48:32 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-06 10:48:32 [LogBack INFO] WSInputAdapter - Stopping web server on port 8886
+2018-08-06 10:48:32 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8886}
+2018-08-06 10:48:32 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-06 10:48:32 [LogBack INFO] WSInputAdapter - Web server stopped on port 8886
+2018-08-06 10:48:32 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10006; pid=12648; version=7.6.7; StreamBaseServer shut down
+2018-08-06 10:48:47 [LogBack INFO] log - Logging initialized @12536ms
+2018-08-06 10:48:49 [LogBack INFO] WSInputAdapter - Starting web server on port 8886
+2018-08-06 10:48:49 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-06 10:48:49 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-06 10:48:49 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8886}
+2018-08-06 10:48:49 [LogBack INFO] Server - Started @14451ms
+2018-08-06 10:48:49 [LogBack INFO] WSInputAdapter - Web server started on port 8886
+2018-08-06 10:48:49 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10006; pid=13872; version=7.6.7; Listening
+2018-08-06 10:49:26 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-14 14:47:16 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-14 14:47:16 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-14 14:47:16 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-14 14:47:16 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-14 14:47:16 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-14 14:47:16 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=16436; version=7.6.7; StreamBaseServer shut down
+2018-08-14 14:47:37 [LogBack INFO] log - Logging initialized @13497ms
+2018-08-14 14:47:39 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-14 14:47:39 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-14 14:47:39 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-14 14:47:39 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-14 14:47:39 [LogBack INFO] Server - Started @15288ms
+2018-08-14 14:47:39 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-14 14:47:39 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=15376; version=7.6.7; Listening
+2018-08-15 10:20:58 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-15 14:39:58 [LogBack WARN] HTTPServer - Connection /172.26.80.18:52795: I/O exception: 远程主机强迫关闭了一个现有的连接。
+2018-08-15 14:39:58 [LogBack WARN] HTTPServer - Connection /172.26.80.18:52249: I/O exception: 远程主机强迫关闭了一个现有的连接。
+2018-08-15 14:39:58 [LogBack WARN] HTTPServer - Connection /172.26.80.18:40021: I/O exception: 远程主机强迫关闭了一个现有的连接。
+2018-08-15 14:39:58 [LogBack WARN] HTTPServer - Connection /172.26.80.18:33036: I/O exception: 远程主机强迫关闭了一个现有的连接。
+2018-08-15 14:39:58 [LogBack WARN] HTTPServer - Connection /172.26.80.18:39923: I/O exception: 远程主机强迫关闭了一个现有的连接。
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:40880: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:55033: NoSuchElementException
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:40992: NoSuchElementException
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:33942: NoSuchElementException
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:53656: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:56461: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:42420: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:35372: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:55086: NoSuchElementException
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:56470: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:42428: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:35383: Unable to determine client protocol version
+2018-08-15 14:40:04 [LogBack WARN] HTTPServer - Connection /172.26.80.18:55101: Unable to determine client protocol version
+2018-08-15 14:40:09 [LogBack WARN] HTTPServer - Connection /172.26.80.18:44448: NoSuchElementException
+2018-08-15 14:40:09 [LogBack WARN] HTTPServer - Connection /172.26.80.18:44450: Unable to determine client protocol version
+2018-08-16 11:15:14 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-16 11:15:30 [LogBack INFO] log - Logging initialized @13839ms
+2018-08-16 11:15:32 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-16 11:15:32 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-16 11:15:32 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-16 11:15:32 [LogBack WARN] AbstractLifeCycle - FAILED ServerConnector@e70f13a{HTTP/1.1}{0.0.0.0:8884}: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) [na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-16 11:15:32 [LogBack WARN] AbstractLifeCycle - FAILED org.eclipse.jetty.server.Server@2b76ff4e: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) [na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-16 11:15:32 [LogBack ERROR] WSInputAdapter - Failed to start the web server on port 8884
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) ~[na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-16 11:15:32 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10004; pid=4976; version=7.6.7; Listening
+2018-08-16 11:17:39 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 11:17:58 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-16 11:17:58 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10004; pid=4976; version=7.6.7; StreamBaseServer shut down
+2018-08-16 11:18:06 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 11:20:55 [LogBack INFO] log - Logging initialized @12970ms
+2018-08-16 11:20:57 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-16 11:20:57 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-16 11:20:57 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-16 11:20:57 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-16 11:20:57 [LogBack INFO] Server - Started @15018ms
+2018-08-16 11:20:57 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-08-16 11:20:57 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10004; pid=6752; version=7.6.7; Listening
+2018-08-16 11:21:17 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 14:13:09 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 14:43:48 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-16 14:43:48 [LogBack INFO] WSInputAdapter - Stopping web server on port 8884
+2018-08-16 14:43:48 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-16 14:43:48 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-16 14:43:48 [LogBack INFO] WSInputAdapter - Web server stopped on port 8884
+2018-08-16 14:43:48 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10004; pid=6752; version=7.6.7; StreamBaseServer shut down
+2018-08-16 14:44:08 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=14916; version=7.6.7; Listening
+2018-08-16 14:44:19 [LogBack INFO] log - Logging initialized @16209ms
+2018-08-16 14:44:21 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-16 14:44:21 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-16 14:44:21 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@47fab7d1{/,null,AVAILABLE}
+2018-08-16 14:44:21 [LogBack INFO] ServerConnector - Started ServerConnector@71286bf5{HTTP/1.1}{0.0.0.0:8884}
+2018-08-16 14:44:21 [LogBack INFO] Server - Started @17615ms
+2018-08-16 14:44:21 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-08-17 10:10:13 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-08-17 10:10:13 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-17 10:10:13 [LogBack WARN] RuntimeEnv - Error at operator: default.OutputAdapterPOST, port: 0, tuple: {"RemoteServer":"172.26.82.208:8800","StreamBaseServer":"172.26.11.18:8884","RequestId":"3626b98f-e887-4e37-bdf9-fbbfcb0e8340","ResponseData":"Encountered a null value in field \"RequestData\": [Ljava.lang.StackTraceElement;@7a04394f","Status":"Fail","ServiceName":"/MedicalServiceESB.asmx","RequestIPAddress":"172.26.11.18","SoapAction":"http://tempuri.org/ESP_Input","StartDt":"2018-08-16 15:04:44.412+0800","EndDt":"2018-08-17 10:10:13.054+0800","WSInterval":24,"MessageType":"SOAP1.1","SubScriptionId":"1","WorkFlowName":"8884_UISToHIS"}, exception: Adapter Exception: java.lang.IllegalStateException: AsyncContext completed
+2018-08-17 10:10:13 [LogBack INFO] WSInputAdapter - Stopping web server on port 8884
+2018-08-17 10:10:13 [LogBack INFO] ServerConnector - Stopped ServerConnector@71286bf5{HTTP/1.1}{0.0.0.0:8884}
+2018-08-17 10:10:13 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@47fab7d1{/,null,UNAVAILABLE}
+2018-08-17 10:10:13 [LogBack INFO] WSInputAdapter - Web server stopped on port 8884
+2018-08-17 10:10:13 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=14916; version=7.6.7; StreamBaseServer shut down
+2018-08-17 10:11:42 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=7764; version=7.6.7; Listening
+2018-08-17 10:11:53 [LogBack INFO] log - Logging initialized @15556ms
+2018-08-17 10:11:54 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-17 10:11:54 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-17 10:11:55 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@d84a56e{/,null,AVAILABLE}
+2018-08-17 10:11:55 [LogBack INFO] ServerConnector - Started ServerConnector@718c2135{HTTP/1.1}{0.0.0.0:8884}
+2018-08-17 10:11:55 [LogBack INFO] Server - Started @16834ms
+2018-08-17 10:11:55 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-08-17 10:12:50 [LogBack INFO] Logger - 338eb6b1-158e-4094-abe8-cb5be0f88f03,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1860"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56648,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1860,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 10:38:24 [LogBack INFO] Logger - 826da3f5-dc32-47cb-a17c-cf0ee085058c,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1869"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56702,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1869,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;[CDATA[我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行]]&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;[CDATA[我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行]]&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 10:41:49 [LogBack INFO] Logger - 71f74cdb-50fc-4c50-a94b-a4e5bf5bd346,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1872"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56708,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1872,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;<![CDATA[我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行]]>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;<![CDATA[我是测试第一行我是测试第二行我是测试第三行我是测试第四行我是测试第五行]]>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 14:37:32 [LogBack INFO] Logger - 1cce74f7-71ac-4978-a298-f1bd31fc40fe,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1921"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56763,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1921,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行&#x000D;&#x000A;我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行&#x000D;&#x000A;我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 14:39:06 [LogBack INFO] Logger - 4538993b-a4b1-45a4-a6f8-f3aab2a18e13,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1913"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56769,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1913,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行char(10)我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行char(10)我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 14:40:03 [LogBack INFO] Logger - a81e8a97-0c4b-4d96-8c0d-0f28e22b0c0a,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1906"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56774,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1906,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行&#x000D;&#x000A;我是测试第三行&#x000D;&#x000A;我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-17 17:17:16 [LogBack INFO] Logger - cacc9315-2d1c-4020-845d-0e18247983e1,"[""SOAPAction,http://tempuri.org/ESP_Input"",""Accept,""""text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2"""""",""User-Agent,Java/1.8.0_31"",""Connection,keep-alive"",""Host,172.26.11.18:8884"",""Content-Length,1876"",""Content-Type,text/xml;charset=UTF-8""]",[],172.26.11.18,56811,/MedicalServiceESB.asmx,http://172.26.11.18:8884/MedicalServiceESB.asmx,text/xml;charset=UTF-8,1876,POST,null,null,"<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行我是测试第三行我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>","<?xml version=""1.0""?><SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""><SOAP-ENV:Body><ESP_Input xmlns=""http://tempuri.org/""><user></user><password></password><methodCode>EMR-ET-S10</methodCode><methodName>SynchRisReport</methodName><parameter>&lt;?xml version='1.0' encoding='gb2312'?&gt;&lt;CallInfo&gt;&lt;Reportcomment&gt;&lt;ETONo&gt;11793774&lt;/ETONo&gt;&lt;ETODetailNo&gt;11793774&lt;/ETODetailNo&gt;&lt;ReportNo&gt;1&lt;/ReportNo&gt;&lt;ExamDateTime&gt;2018-08-15 09:21:53&lt;/ExamDateTime&gt;&lt;ReportDateTime&gt;2018-08-15 09:21:53&lt;/ReportDateTime&gt;&lt;ExamPart&gt;肝,胆,胰,脾,（需空腹)&lt;/ExamPart&gt;&lt;DeptCode&gt;33370482&lt;/DeptCode&gt;&lt;DeptName&gt;内窥镜中心&lt;/DeptName&gt;&lt;DoctorId&gt;000&lt;/DoctorId&gt;&lt;DoctorName&gt;系统管理员&lt;/DoctorName&gt;&lt;CriticalFlag&gt;1&lt;/CriticalFlag&gt;&lt;CriticalContent&gt;&lt;/CriticalContent&gt;&lt;ExamDescript&gt;我是测试第一行我是测试第二行我是测试第三行我是测试第四行&#x000D;&#x000A;我是测试第五行>&lt;/ExamDescript&gt;&lt;DiagDescript&gt;&lt;/DiagDescript&gt;&lt;ExamVerdict&gt;我是测试第一行    我是测试第二行    我是测试第三行    我是测试第四行    我是测试第五行&lt;/ExamVerdict&gt;&lt;ExamDiag&gt;&lt;/ExamDiag&gt;&lt;Reporter&gt;000&lt;/Reporter&gt;&lt;ReporterName&gt;系统管理员&lt;/ReporterName&gt;&lt;DateTime&gt;2018-08-15 09:21:53&lt;/DateTime&gt;&lt;ReportTypeFlag&gt;1&lt;/ReportTypeFlag&gt;&lt;Noter&gt;&lt;/Noter&gt;&lt;ReportURL&gt;http://172.26.12.39:81/HCRISOtherReport.aspx?Patient_ID=1123341&lt;/ReportURL&gt;&lt;ImageURL&gt;1123341&lt;/ImageURL&gt;&lt;/Reportcomment&gt;&lt;/CallInfo&gt;</parameter></ESP_Input></SOAP-ENV:Body></SOAP-ENV:Envelope>",172.26.11.18:8884,172.26.10.200:8884,172.26.82.208:8800,false,172.26.11.89,8884_UISToHIS
+2018-08-21 13:06:33 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-21 13:06:35 [LogBack INFO] WSInputAdapter - Stopping web server on port 8884
+2018-08-21 13:06:35 [LogBack INFO] ServerConnector - Stopped ServerConnector@718c2135{HTTP/1.1}{0.0.0.0:8884}
+2018-08-21 13:06:35 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@d84a56e{/,null,UNAVAILABLE}
+2018-08-21 13:06:35 [LogBack INFO] WSInputAdapter - Web server stopped on port 8884
+2018-08-21 13:06:35 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=7764; version=7.6.7; StreamBaseServer shut down
+2018-08-21 13:07:23 [LogBack INFO] log - Logging initialized @13718ms
+2018-08-21 13:07:25 [LogBack INFO] WSInputAdapter - Starting web server on port 8884
+2018-08-21 13:07:25 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-21 13:07:25 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-21 13:07:25 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-21 13:07:25 [LogBack INFO] Server - Started @15624ms
+2018-08-21 13:07:25 [LogBack INFO] WSInputAdapter - Web server started on port 8884
+2018-08-21 13:07:26 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10004; pid=12448; version=7.6.7; Listening
+2018-08-23 18:02:00 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-23 18:02:00 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-23 18:02:00 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-23 18:02:00 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-23 18:02:00 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-23 18:02:00 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=15376; version=7.6.7; StreamBaseServer shut down
+2018-08-23 18:02:28 [LogBack INFO] log - Logging initialized @13732ms
+2018-08-23 18:02:30 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-23 18:02:30 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-23 18:02:30 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-23 18:02:30 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-23 18:02:30 [LogBack INFO] Server - Started @15752ms
+2018-08-23 18:02:30 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-23 18:02:30 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=5832; version=7.6.7; Listening
+2018-08-24 21:07:03 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-24 21:07:03 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-24 21:07:03 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-24 21:07:03 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-24 21:07:03 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-24 21:07:04 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=5832; version=7.6.7; StreamBaseServer shut down
+2018-08-24 21:07:22 [LogBack INFO] log - Logging initialized @13808ms
+2018-08-24 21:07:23 [LogBack INFO] WSInputAdapter - Starting web server on port 8881
+2018-08-24 21:07:23 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-24 21:07:23 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2bd08376{/,null,AVAILABLE}
+2018-08-24 21:07:24 [LogBack INFO] ServerConnector - Started ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-24 21:07:24 [LogBack INFO] Server - Started @15613ms
+2018-08-24 21:07:24 [LogBack INFO] WSInputAdapter - Web server started on port 8881
+2018-08-24 21:07:24 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10001; pid=15944; version=7.6.7; Listening
+2018-08-28 17:05:01 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 17:05:01 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-28 17:05:01 [LogBack INFO] ServerConnector - Stopped ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-28 17:05:01 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@41e68d87{/,null,UNAVAILABLE}
+2018-08-28 17:05:01 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-28 17:05:01 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=7828; version=7.6.7; StreamBaseServer shut down
+2018-08-28 17:05:22 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10000; pid=22960; version=7.6.7; Listening
+2018-08-28 17:05:32 [LogBack INFO] log - Logging initialized @15774ms
+2018-08-28 17:05:34 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-28 17:05:34 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-28 17:05:34 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@2b072107{/,null,AVAILABLE}
+2018-08-28 17:05:34 [LogBack INFO] ServerConnector - Started ServerConnector@3581c6c2{HTTP/1.1}{0.0.0.0:8882}
+2018-08-28 17:05:34 [LogBack INFO] Server - Started @17145ms
+2018-08-28 17:05:34 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-28 17:07:59 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 17:07:59 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-28 17:07:59 [LogBack INFO] ServerConnector - Stopped ServerConnector@3581c6c2{HTTP/1.1}{0.0.0.0:8882}
+2018-08-28 17:07:59 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2b072107{/,null,UNAVAILABLE}
+2018-08-28 17:07:59 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-28 17:07:59 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10000; pid=22960; version=7.6.7; StreamBaseServer shut down
+2018-08-28 17:08:18 [LogBack INFO] log - Logging initialized @13845ms
+2018-08-28 17:08:20 [LogBack INFO] WSInputAdapter - Starting web server on port 8882
+2018-08-28 17:08:20 [LogBack INFO] Server - jetty-9.2.1.v20140609
+2018-08-28 17:08:20 [LogBack INFO] ContextHandler - Started o.e.j.s.h.ContextHandler@41e68d87{/,null,AVAILABLE}
+2018-08-28 17:08:20 [LogBack INFO] ServerConnector - Started ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-28 17:08:20 [LogBack INFO] Server - Started @15886ms
+2018-08-28 17:08:20 [LogBack INFO] WSInputAdapter - Web server started on port 8882
+2018-08-28 17:08:20 [LogBack INFO] StreamBaseHTTPServer - sbd at WIN-1OCJU9UPDTR:10002; pid=7244; version=7.6.7; Listening
+2018-08-28 18:01:12 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:12 [LogBack INFO] WSInputAdapter - Stopping web server on port 8881
+2018-08-28 18:01:12 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8881}
+2018-08-28 18:01:12 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-28 18:01:12 [LogBack INFO] WSInputAdapter - Web server stopped on port 8881
+2018-08-28 18:01:12 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10001; pid=15944; version=7.6.7; StreamBaseServer shut down
+2018-08-28 18:01:16 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:16 [LogBack INFO] WSInputAdapter - Stopping web server on port 8882
+2018-08-28 18:01:16 [LogBack INFO] ServerConnector - Stopped ServerConnector@539d019{HTTP/1.1}{0.0.0.0:8882}
+2018-08-28 18:01:16 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@41e68d87{/,null,UNAVAILABLE}
+2018-08-28 18:01:16 [LogBack INFO] WSInputAdapter - Web server stopped on port 8882
+2018-08-28 18:01:16 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10002; pid=7244; version=7.6.7; StreamBaseServer shut down
+2018-08-28 18:01:19 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:19 [LogBack INFO] WSInputAdapter - Stopping web server on port 8883
+2018-08-28 18:01:19 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8883}
+2018-08-28 18:01:19 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-28 18:01:19 [LogBack INFO] WSInputAdapter - Web server stopped on port 8883
+2018-08-28 18:01:19 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10003; pid=7884; version=7.6.7; StreamBaseServer shut down
+2018-08-28 18:01:22 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:22 [LogBack INFO] WSInputAdapter - Stopping web server on port 8884
+2018-08-28 18:01:22 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8884}
+2018-08-28 18:01:22 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-28 18:01:22 [LogBack INFO] WSInputAdapter - Web server stopped on port 8884
+2018-08-28 18:01:22 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10004; pid=12448; version=7.6.7; StreamBaseServer shut down
+2018-08-28 18:01:26 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:26 [LogBack INFO] WSInputAdapter - Stopping web server on port 8885
+2018-08-28 18:01:26 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8885}
+2018-08-28 18:01:26 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-28 18:01:26 [LogBack INFO] WSInputAdapter - Web server stopped on port 8885
+2018-08-28 18:01:26 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10005; pid=2528; version=7.6.7; StreamBaseServer shut down
+2018-08-28 18:01:29 [LogBack INFO] StreamBaseServer - StreamBase Server shutting down
+2018-08-28 18:01:30 [LogBack INFO] WSInputAdapter - Stopping web server on port 8886
+2018-08-28 18:01:30 [LogBack INFO] ServerConnector - Stopped ServerConnector@4426bff1{HTTP/1.1}{0.0.0.0:8886}
+2018-08-28 18:01:30 [LogBack INFO] ContextHandler - Stopped o.e.j.s.h.ContextHandler@2bd08376{/,null,UNAVAILABLE}
+2018-08-28 18:01:30 [LogBack INFO] WSInputAdapter - Web server stopped on port 8886
+2018-08-28 18:01:30 [LogBack INFO] SBD - sbd at WIN-1OCJU9UPDTR:10006; pid=13872; version=7.6.7; StreamBaseServer shut down

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modify version="10.3.0_0d7585e34d7951c38306c510b7c74a27a27fb955">
+    <add>
+        <annotations>
+            <annotation name="hygienic"/>
+        </annotations>
+        <type-metadata>
+            <param name="type" value="module"/>
+            <param name="fully-qualified-name" value="com.perkinelmer.pkisignals.0000_PKIWS"/>
+        </type-metadata>
+        <memory-model-settings/>
+        <parameter-definitions>
+            <parameter default="'127.0.0.1:8888'" name="UrlReplaceFrom"/>
+            <parameter default="'127.0.0.1:8888'" name="UrlReplaceFrom1"/>
+            <parameter default="'www.webxml.com.cn'" name="UrlReplaceTo"/>
+            <parameter default="'172.26.11.89'" name="RequestIPAddress"/>
+            <parameter default="false" name="UseAuthoritys"/>
+            <parameter default="'8000_PKIWS'" name="WorkFlowName"/>
+        </parameter-definitions>
+        <dynamic-variables/>
+        <box name="WSInputAdapter" type="inputadapter">
+            <output port="1" stream="out:WSInputAdapter_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.webserver.input.WebServerRequest"/>
+            <param name="CommandField" value="Command"/>
+            <param name="ContextPath" value="/"/>
+            <param name="EnableControlPort" value="false"/>
+            <param name="EnableStatusPort" value="false"/>
+            <param name="FileStoragePath" value=""/>
+            <param name="LogLevel" value="INFO"/>
+            <param name="MultipartFormData" value="false"/>
+            <param name="RequestIdFieldName" value="RequestId"/>
+            <param name="WebSocket" value=""/>
+            <param name="WebSocketReadDataType" value="String"/>
+            <param name="jsonpCallbackName" value="callback"/>
+            <param name="parametersSchema" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;schema/&gt;&#13;&#10;"/>
+            <param name="parametersTimestampFormat" value="yyyy-MM-dd HH:mm:ss.SSSZ"/>
+            <param name="requestDataOutgoingFieldName" value="Data"/>
+            <param name="requestDataSchema" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;schema&gt;&#13;&#10;    &lt;field name=&quot;Data&quot; type=&quot;string&quot;/&gt;&#13;&#10;&lt;/schema&gt;&#13;&#10;"/>
+            <param name="requestDataTransformerContentTypeMap-key.0" value=".*"/>
+            <param name="requestDataTransformerContentTypeMap-value.0" value="com.perkinelmer.service.dataTransformer.SOAPDataTransformer"/>
+            <param name="requestParameterName" value=""/>
+            <param name="webServerConfigElement" value="Web Server Port 0000"/>
+        </box>
+        <box name="addGlobalParam" type="map">
+            <input port="1" stream="out:WSInputAdapter_1"/>
+            <output port="1" stream="out:addGlobalParam_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="UrlReplaceFrom">${UrlReplaceFrom}</include>
+                    <include field="UrlReplaceFrom1">${UrlReplaceFrom1}</include>
+                    <include field="UrlReplaceTo">${UrlReplaceTo}</include>
+                    <include field="UseAuthoritys">${UseAuthoritys}</include>
+                    <include field="RequestIPAddress">${RequestIPAddress}</include>
+                    <include field="WorkFlowName">${WorkFlowName}</include>
+                    <replace field="Data">input.Data.Data</replace>
+                </expressions>
+            </target-list>
+        </box>
+        <module-reference name="Module">
+            <input name="InputStream" port="1" stream="out:addGlobalParam_1"/>
+            <output name="OutputStreamPOST" port="1" stream="out:Module_1"/>
+            <output name="OutputStreamGET" port="2" stream="out:Module_2"/>
+            <output name="OutputStreamError" port="3" stream="out:Module_3"/>
+            <output name="OutputStreamLiveView" port="4" stream="DataOut"/>
+            <param name="parallel" value="true"/>
+            <multiplicity number="50" type="concrete"/>
+            <param name="file" value="com.perkinelmer.pkisignals.BaseServices"/>
+        </module-reference>
+        <output-stream name="DataOut" scope="public"/>
+        <box name="OutputAdapterERROR" type="outputadapter">
+            <input port="1" stream="out:Module_3"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.webserver.output.WebServerResponse"/>
+            <param name="ContentTypeField" value=""/>
+            <param name="CookiesField" value=""/>
+            <param name="DataField" value="ResponseData"/>
+            <param name="HttpHeadersField" value=""/>
+            <param name="LogLevel" value="INFO"/>
+            <param name="RequestIdField" value="RequestId"/>
+            <param name="StatusCodeField" value=""/>
+            <param name="defaultHeaders-col0.0" value="Content-Type"/>
+            <param name="defaultHeaders-col1.0" value="text/xml; charset=utf-8"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.0" value=".*json.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.1" value=".*xml.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.2" value=".*"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.0" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.1" value="com.streambase.sb.adapter.webserver.data.XMLResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.2" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+        </box>
+        <box name="OutputAdapterGET" type="outputadapter">
+            <input port="1" stream="out:Module_2"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.webserver.output.WebServerResponse"/>
+            <param name="ContentTypeField" value=""/>
+            <param name="CookiesField" value=""/>
+            <param name="DataField" value="ResponseData"/>
+            <param name="HttpHeadersField" value=""/>
+            <param name="LogLevel" value="INFO"/>
+            <param name="RequestIdField" value="RequestId"/>
+            <param name="StatusCodeField" value=""/>
+            <param name="defaultHeaders-col0.0" value="Content-Type"/>
+            <param name="defaultHeaders-col1.0" value="text/xml; charset=utf-8"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.0" value=".*json.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.1" value=".*xml.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.2" value=".*"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.0" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.1" value="com.streambase.sb.adapter.webserver.data.XMLResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.2" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+        </box>
+        <box name="OutputAdapterPOST" type="outputadapter">
+            <input port="1" stream="out:Module_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.webserver.output.WebServerResponse"/>
+            <param name="ContentTypeField" value=""/>
+            <param name="CookiesField" value=""/>
+            <param name="DataField" value="ResponseData"/>
+            <param name="HttpHeadersField" value=""/>
+            <param name="LogLevel" value="INFO"/>
+            <param name="RequestIdField" value="RequestId"/>
+            <param name="StatusCodeField" value=""/>
+            <param name="defaultHeaders-col0.0" value="Content-Type"/>
+            <param name="defaultHeaders-col1.0" value="text/xml; charset=utf-8"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.0" value=".*json.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.1" value=".*xml.*"/>
+            <param name="responseDataTransformerAcceptTypeMap-key.2" value=".*"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.0" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.1" value="com.streambase.sb.adapter.webserver.data.XMLResponseDataTransformer"/>
+            <param name="responseDataTransformerAcceptTypeMap-value.2" value="com.streambase.sb.adapter.webserver.data.JSONResponseDataTransformer"/>
+        </box>
+    </add>
+</modify>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- vim: set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab : -->
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.perkinelmer</groupId>
+    <artifactId>PKISignals_app</artifactId>
+    <packaging>ep-application</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>PKISignals_app</name>
+
+    <!-- common definitions for this version of StreamBase -->
+    <parent>
+        <groupId>com.tibco.ep.sb.parent</groupId>
+        <artifactId>ep-application</artifactId>
+        <version>10.3.0</version>
+    </parent>
+
+    <!-- build and test rules -->
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>com.tibco.ep</groupId>
+                <artifactId>ep-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <nodeDeployFile>${project.basedir}/src/test/configurations/node.conf</nodeDeployFile>
+                    <nodes>
+                        <node>A</node>
+                    </nodes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+    <dependencies>
+    	<dependency>
+    		<groupId>com.perkinelmer</groupId>
+    		<artifactId>PKISignals</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+    		<type>ep-liveview-fragment</type>
+    	</dependency>
+    </dependencies>
+</project>

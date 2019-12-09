@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modify version="10.3.0_0d7585e34d7951c38306c510b7c74a27a27fb955">
+    <add>
+        <annotations>
+            <annotation name="hygienic"/>
+        </annotations>
+        <type-metadata>
+            <param name="type" value="module"/>
+            <param name="fully-qualified-name" value="com.perkinelmer.pkisignals.saveLog"/>
+        </type-metadata>
+        <memory-model-settings/>
+        <dynamic-variables/>
+        <data name="JDBCTable" type="jdbctable">
+            <param name="connection" value="SQLConnection"/>
+        </data>
+        <stream name="InputStream">
+            <schema>
+                <field name="RequestId" type="string"/>
+                <field name="RequestData" type="string"/>
+                <field name="ResponseData" type="string"/>
+                <field name="Status" type="string"/>
+                <field name="RemoteServer" type="string"/>
+                <field name="StreamBaseServer" type="string"/>
+                <field name="ServiceName" type="string"/>
+                <field name="RequestIPAddress" type="string"/>
+                <field name="SoapAction" type="string"/>
+                <field name="EndDt" type="timestamp"/>
+                <field name="StartDt" type="timestamp"/>
+                <field name="WSInterval" type="int"/>
+                <field name="MessageInfo" type="string"/>
+                <field name="MessageType" type="string"/>
+                <field name="SubScriptionId" type="string"/>
+                <field name="WorkFlowName" type="string"/>
+            </schema>
+        </stream>
+        <box name="SaveLog" type="query">
+            <input port="1" stream="InputStream"/>
+            <output port="1" stream="OutputStream"/>
+            <dataref id="jdbctable" name="JDBCTable"/>
+            <param name="sql" value="INSERT INTO wsm.dbo.CallLogs&#13;&#10;           (RequestId&#13;&#10;           ,ServiceName&#13;&#10;           ,RequestIPAddress&#13;&#10;           ,SoapAction&#13;&#10;           ,StartDt&#13;&#10;           ,EndDt&#13;&#10;&#9;    ,WSInterval&#13;&#10;           ,MessageInfo&#13;&#10;           ,MessageResponse&#13;&#10;           ,RemoteServer&#13;&#10;&#9;    ,StreamBaseServer&#13;&#10;           ,Status&#13;&#10;&#9;    ,MessageType&#13;&#10;&#9;    ,SubScription_Id&#13;&#10;&#9;    ,WorkFlowName)&#13;&#10;     VALUES&#13;&#10;           ({RequestId}&#13;&#10;           ,{ServiceName}&#13;&#10;           ,{RequestIPAddress}&#13;&#10;           ,{SoapAction}&#13;&#10;           ,{StartDt}&#13;&#10;           ,{EndDt}&#13;&#10;&#9;    ,{WSInterval}&#13;&#10;           ,{MessageInfo}&#13;&#10;           ,{ResponseData}&#13;&#10;&#9;    ,{RemoteServer}&#13;&#10;&#9;    ,{StreamBaseServer}&#13;&#10;           ,{Status}&#13;&#10;           ,{MessageType}&#13;&#10;&#9;    ,{SubScriptionId}&#13;&#10;&#9;    ,{WorkFlowName})"/>
+            <param name="use-callable-statements" value="false"/>
+            <param name="send-null-tuple" value="false"/>
+            <param name="jdbc-output-column" value="0"/>
+            <target-list>
+                <item name="table" selection="all"/>
+                <item name="input" selection="all"/>
+            </target-list>
+            <param name="result-set" value="query"/>
+        </box>
+        <output-stream name="OutputStream"/>
+    </add>
+</modify>

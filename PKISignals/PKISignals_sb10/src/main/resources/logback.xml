@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+  <appender name="INFO_FILE" 
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <append>true</append>
+    <File>logs/info.log</File>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>info</level>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>info-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%date{yyyy-MM-dd HH:mm:ss} [LogBack %level] %logger{0} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="ERROR_FILE" 
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <append>true</append>
+    <File>logs/error.log</File>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>error</level>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>error-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%date{yyyy-MM-dd HH:mm:ss} [LogBack %level] %logger{0} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="RootConsoleAppender" 
+            class="ch.qos.logback.core.ConsoleAppender">
+  	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>info</level>
+    </filter>
+    <encoder>
+      <pattern>[LogBack %level] %logger{0} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <root>
+    <level value="info"/>
+    <appender-ref ref="INFO_FILE"/>
+    <appender-ref ref="ERROR_FILE"/>
+    <appender-ref ref="RootConsoleAppender"/>
+  </root>
+</configuration>

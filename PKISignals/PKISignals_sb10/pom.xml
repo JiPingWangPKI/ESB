@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- vim: set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab : -->
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.perkinelmer</groupId>
+    <artifactId>PKISignals</artifactId>
+    <packaging>ep-liveview-fragment</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>PKISignals</name>
+
+    <!-- common definitions for this version of StreamBase -->
+    <parent>
+        <groupId>com.tibco.ep.sb.parent</groupId>
+        <artifactId>ep-liveview-fragment</artifactId>
+        <version>10.3.0</version>
+    </parent>
+	<build>
+		<finalName>PKISignals</finalName>
+		<plugins>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-javadoc-plugin</artifactId>
+			    <configuration>
+			        <encoding>${chartset.UTF8}</encoding>
+			        <aggregate>true</aggregate>
+			        <charset>${chartset.UTF8}</charset>
+			        <docencoding>${chartset.UTF8}</docencoding>
+			    </configuration>
+			    <executions>
+			        <execution>
+			            <id>attach-javadocs</id>
+			            <phase>package</phase>
+			            <goals>
+			                <goal>jar</goal>
+			            </goals>
+			            <configuration>
+			                <additionalparam>-Xdoclint:none</additionalparam>
+			            </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+		</plugins>
+	</build>
+    <dependencies>
+    	
+    	<dependency>
+    		<groupId>com.tibco.ep.sb.adapter</groupId>
+    		<artifactId>webserver</artifactId>
+    		<version>10.3.0</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>com.tibco.ep.sb.adapter</groupId>
+    		<artifactId>fileio</artifactId>
+    		<version>10.3.0</version>
+    	</dependency>
+    	<dependency>
+		    <groupId>c3p0</groupId>
+		    <artifactId>c3p0</artifactId>
+		    <version>0.9.0.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>mssql-jdbc</artifactId>
+		    <version>6.2.2.jre8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tibco.ep.sb.adapter</groupId>
+			<artifactId>ldm</artifactId>
+			<version>10.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tibco.ep.sb.adapter</groupId>
+			<artifactId>fix</artifactId>
+			<version>10.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tibco.ep.sb.adapter</groupId>
+			<artifactId>python</artifactId>
+			<version>10.3.0</version>
+		</dependency>
+    </dependencies>
+</project>

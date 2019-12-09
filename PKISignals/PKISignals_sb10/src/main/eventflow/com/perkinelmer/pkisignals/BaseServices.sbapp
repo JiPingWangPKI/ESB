@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modify version="10.3.0_0d7585e34d7951c38306c510b7c74a27a27fb955">
+    <add>
+        <annotations>
+            <annotation name="hygienic"/>
+        </annotations>
+        <type-metadata>
+            <param name="type" value="module"/>
+            <param name="fully-qualified-name" value="com.perkinelmer.pkisignals.BaseServices"/>
+        </type-metadata>
+        <memory-model-settings/>
+        <dynamic-variables/>
+        <stream name="InputStream">
+            <schema>
+                <field name="RequestId" type="string"/>
+                <field name="HttpHeaders" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Key" type="string"/>
+                            <field name="Value" type="string"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="Cookies" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Name" type="string"/>
+                            <field name="Value" type="string"/>
+                            <field name="MaxAge" type="int"/>
+                            <field name="Comment" type="string"/>
+                            <field name="Domain" type="string"/>
+                            <field name="HttpOnly" type="bool"/>
+                            <field name="Path" type="string"/>
+                            <field name="Secure" type="bool"/>
+                            <field name="Version" type="int"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="RemoteHost" type="string"/>
+                <field name="RemotePort" type="int"/>
+                <field name="URI" type="string"/>
+                <field name="URL" type="string"/>
+                <field name="ContentType" type="string"/>
+                <field name="ContentLength" type="long"/>
+                <field name="Method" type="string"/>
+                <field name="callback" type="string"/>
+                <field name="ParametersList" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Key" type="string"/>
+                            <field name="Value" type="string"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="Body" type="string"/>
+                <field name="Data" type="string"/>
+                <field name="UrlReplaceFrom" type="string"/>
+                <field name="UrlReplaceFrom1" type="string"/>
+                <field name="UrlReplaceTo" type="string"/>
+                <field name="UseAuthoritys" type="bool"/>
+                <field name="RequestIPAddress" type="string"/>
+                <field name="WorkFlowName" type="string"/>
+            </schema>
+        </stream>
+        <box name="AddStartTime" type="map">
+            <input port="1" stream="InputStream"/>
+            <output port="1" stream="out:AddStartTime_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="StartDt">now()</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="UseAuthoritys" type="filter">
+            <input port="1" stream="out:AddStartTime_1"/>
+            <output port="1" stream="out:UseAuthoritys_1"/>
+            <output port="2" stream="out:UseAuthoritys_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="input1.UseAuthoritys==true"/>
+            <param name="expression.1" value="input1.UseAuthoritys==false"/>
+        </box>
+        <module-reference name="CheckAuthority">
+            <input name="InputStream" port="1" stream="out:UseAuthoritys_1"/>
+            <output name="OutputStream" port="1" stream="out:CheckAuthority_1"/>
+            <param name="file" value="com.perkinelmer.pkisignals.checkAuthority"/>
+        </module-reference>
+        <box name="NoAuthoritys" type="map">
+            <input port="1" stream="out:UseAuthoritys_2"/>
+            <output port="1" stream="out:NoAuthoritys_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'true'</include>
+                    <include field="subscriptionId">'1'</include>
+                    <include field="checkAuthorityMsg">'noCheckAuthority'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="UnionAuthority" type="union">
+            <input port="1" stream="out:CheckAuthority_1"/>
+            <input port="2" stream="out:NoAuthoritys_1"/>
+            <output port="1" stream="out:UnionAuthority_1"/>
+            <param name="strict" value="false"/>
+        </box>
+        <box name="FilterAuthoritys" type="filter">
+            <input port="1" stream="out:UnionAuthority_1"/>
+            <output port="1" stream="out:FilterAuthoritys_1"/>
+            <output port="2" stream="out:FilterAuthoritys_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="input1.checkAuthority=='true'"/>
+            <param name="expression.1" value="input1.checkAuthority=='false'"/>
+        </box>
+        <box name="ErrorResponse" type="map">
+            <input port="1" stream="out:FilterAuthoritys_2"/>
+            <output port="1" stream="OutputStreamError"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="ResponseData">input.checkAuthorityMsg</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="FilterHttpMethod" type="filter">
+            <input port="1" stream="out:FilterAuthoritys_1"/>
+            <output port="1" stream="out:FilterHttpMethod_1"/>
+            <output port="2" stream="out:FilterHttpMethod_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="input1.Method == &quot;POST&quot;"/>
+            <param name="expression.1" value="input1.Method == &quot;GET&quot;"/>
+        </box>
+        <output-stream name="OutputStreamError"/>
+        <box name="FliterCyclicCallItself" type="filter">
+            <input port="1" stream="out:FilterHttpMethod_1"/>
+            <output port="1" stream="out:FliterCyclicCallItself_1"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="!isnull(Data)&amp;&amp;Data!=&quot;&quot;"/>
+        </box>
+        <box name="GetRequestElementsForGet" type="map">
+            <input port="1" stream="out:FilterHttpMethod_2"/>
+            <output port="1" stream="out:GetRequestElementsForGet_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RequestUrl">input1.URL</include>
+                    <include field="RequestData">join('&amp;',input1.ParametersList)</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="ResponseData">''</include>
+                    <include field="UrlReplaceFrom">input1.UrlReplaceFrom</include>
+                    <include field="UrlReplaceFrom1">input1.UrlReplaceFrom1</include>
+                    <include field="UrlReplaceTo">input1.UrlReplaceTo</include>
+                    <include field="HttpHeaders">input1.HttpHeaders</include>
+                    <include field="Status">''</include>
+                    <include field="soapAction">''</include>
+                    <include field="MessageType">'GET'</include>
+                    <include field="WSInterval">0</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="RequestIPAddress">input1.RemoteHost</include>
+                    <include field="SubScriptionId">input1.subscriptionId</include>
+                    <include field="ServiceName">input1.URI</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="ForwardRequestCopy" type="java">
+            <input port="1" stream="out:GetRequestElementsForGet_1"/>
+            <output port="1" stream="out:ForwardRequestCopy_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.perkinelmer.service.renji.Renji"/>
+        </box>
+        <box name="GetRequestElementsForPost" type="map">
+            <input port="1" stream="out:FliterCyclicCallItself_1"/>
+            <output port="1" stream="out:GetRequestElementsForPost_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RequestUrl">input1.URL</include>
+                    <include field="RequestData">input1.Data</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="ResponseData">''</include>
+                    <include field="UrlReplaceFrom">input1.UrlReplaceFrom</include>
+                    <include field="UrlReplaceFrom1">input1.UrlReplaceFrom1</include>
+                    <include field="UrlReplaceTo">input1.UrlReplaceTo</include>
+                    <include field="HttpHeaders">input1.HttpHeaders</include>
+                    <include field="Status">''</include>
+                    <include field="WSInterval">0</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="RequestIPAddress">input1.RemoteHost</include>
+                    <include field="SubScriptionId">input1.subscriptionId</include>
+                    <include field="ServiceName">input1.URI</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="FindContentTypeForRemote" type="iterate">
+            <input port="1" stream="out:GetRequestElementsForPost_1"/>
+            <output port="1" stream="out:FindContentTypeForRemote_1"/>
+            <param name="iterate-expr" value="HttpHeaders"/>
+            <param name="iterate-where" value="each.element.Key == &quot;Content-Type&quot;"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="ContentType">each.element.Value</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="SendResponseSOAP11Copy2" type="map">
+            <input port="1" stream="out:ForwardRequestCopy_1"/>
+            <output port="1" stream="out:SendResponseSOAP11Copy2_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RemoteServer">input1.UrlReplaceTo</include>
+                    <include field="StreamBaseServer">input1.UrlReplaceFrom</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="RequestData">input1.RequestData</include>
+                    <include field="ResponseData">input1.ResponseData</include>
+                    <include field="Status">input1.Status</include>
+                    <include field="ServiceName">input1.ServiceName</include>
+                    <include field="RequestIPAddress">input1.RequestIPAddress</include>
+                    <include field="SoapAction">''</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="WSInterval">input1.WSInterval</include>
+                    <include field="MessageInfo">input1.RequestData</include>
+                    <include field="MessageType">input1.MessageType</include>
+                    <include field="SubScriptionId">input1.SubScriptionId</include>
+                    <include field="EndDt">now()</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="fiterSoapForRemote" type="filter">
+            <input port="1" stream="out:FindContentTypeForRemote_1"/>
+            <output port="1" stream="out:fiterSoapForRemote_1"/>
+            <output port="2" stream="out:fiterSoapForRemote_2"/>
+            <output port="3" stream="out:fiterSoapForRemote_3"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="contains(input1.ContentType,&quot;text/xml&quot;)"/>
+            <param name="expression.1" value="contains(input1.ContentType,&quot;application/soap+xml&quot;)"/>
+            <param name="expression.2" value="contains(input1.ContentType,&quot;application/x-www-form-urlencoded&quot;)"/>
+        </box>
+        <box name="SplitGet" type="split">
+            <input port="1" stream="out:SendResponseSOAP11Copy2_1"/>
+            <output port="1" stream="OutputStreamGET"/>
+            <output port="2" stream="out:SplitGet_2"/>
+            <output port="3" stream="out:SplitGet_3"/>
+            <param name="output-count" value="3"/>
+        </box>
+        <output-stream name="OutputStreamGET"/>
+        <box name="addMessageTypePOST" type="map">
+            <input port="1" stream="out:fiterSoapForRemote_3"/>
+            <output port="1" stream="out:addMessageTypePOST_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="MessageType">'POST'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="addMessageTypeSOAP11" type="map">
+            <input port="1" stream="out:fiterSoapForRemote_1"/>
+            <output port="1" stream="out:addMessageTypeSOAP11_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="MessageType">'SOAP1.1'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="addMessageTypeSOAP12" type="map">
+            <input port="1" stream="out:fiterSoapForRemote_2"/>
+            <output port="1" stream="out:addMessageTypeSOAP12_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="MessageType">'SOAP1.2'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <module-reference name="saveLogForGET">
+            <input name="InputStream" port="1" stream="out:SplitGet_2"/>
+            <error stream="out:saveLogForGET_1_error"/>
+            <param name="file" value="com.perkinelmer.pkisignals.saveLog"/>
+        </module-reference>
+        <box name="FindSoapActionForRemote" type="iterate">
+            <input port="1" stream="out:addMessageTypeSOAP11_1"/>
+            <output port="1" stream="out:FindSoapActionForRemote_1"/>
+            <param name="iterate-expr" value="HttpHeaders"/>
+            <param name="iterate-where" value="each.element.Key == &quot;SOAPAction&quot;"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="SoapAction">each.element.Value</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="ForwardRequestPOST" type="java">
+            <input port="1" stream="out:addMessageTypePOST_1"/>
+            <output port="1" stream="out:ForwardRequestPOST_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.perkinelmer.service.renji.Renji"/>
+        </box>
+        <box name="ForwardRequestSOAP12" type="java">
+            <input port="1" stream="out:addMessageTypeSOAP12_1"/>
+            <output port="1" stream="out:ForwardRequestSOAP12_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.perkinelmer.service.renji.Renji"/>
+        </box>
+        <box name="OutputAdapter" type="outputadapter">
+            <input port="1" stream="out:saveLogForGET_1_error"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.xmlfilewriter.XMLFileWriter"/>
+            <param name="BufferSize" value="0"/>
+            <param name="Charset" value="UTF-8"/>
+            <param name="Escape" value="false"/>
+            <param name="FileName" value="unSaveLog.xml"/>
+            <param name="FlushInterval" value="0"/>
+            <param name="MaxFileSize" value="0"/>
+            <param name="TruncateFile" value="false"/>
+            <param name="UseDefaultCharset" value="false"/>
+            <param name="logLevel" value="INFO"/>
+        </box>
+        <box name="ForwardRequestSOAP11" type="java">
+            <input port="1" stream="out:FindSoapActionForRemote_1"/>
+            <output port="1" stream="out:ForwardRequestSOAP11_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.perkinelmer.service.renji.Renji"/>
+        </box>
+        <box name="SendResponseSOAP11Copy" type="map">
+            <input port="1" stream="out:ForwardRequestPOST_1"/>
+            <output port="1" stream="out:SendResponseSOAP11Copy_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RemoteServer">input1.UrlReplaceTo</include>
+                    <include field="StreamBaseServer">input1.UrlReplaceFrom</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="RequestData">input1.RequestData</include>
+                    <include field="ResponseData">input1.ResponseData</include>
+                    <include field="Status">input1.Status</include>
+                    <include field="ServiceName">input1.ServiceName</include>
+                    <include field="RequestIPAddress">input1.RequestIPAddress</include>
+                    <include field="SoapAction">''</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="WSInterval">input1.WSInterval</include>
+                    <include field="MessageInfo">input1.RequestData</include>
+                    <include field="MessageType">input1.MessageType</include>
+                    <include field="SubScriptionId">input1.SubScriptionId</include>
+                    <include field="EndDt">now()</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="SendResponseSOAP11Copy3" type="map">
+            <input port="1" stream="out:ForwardRequestSOAP12_1"/>
+            <output port="1" stream="out:SendResponseSOAP11Copy3_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RemoteServer">input1.UrlReplaceTo</include>
+                    <include field="StreamBaseServer">input1.UrlReplaceFrom</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="RequestData">input1.RequestData</include>
+                    <include field="ResponseData">input1.ResponseData</include>
+                    <include field="Status">input1.Status</include>
+                    <include field="ServiceName">input1.ServiceName</include>
+                    <include field="RequestIPAddress">input1.RequestIPAddress</include>
+                    <include field="SoapAction">''</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="WSInterval">input1.WSInterval</include>
+                    <include field="EndDt">now()</include>
+                    <include field="MessageInfo">input1.RequestData</include>
+                    <include field="MessageType">input1.MessageType</include>
+                    <include field="SubScriptionId">input1.SubScriptionId</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="SendResponseSOAP11" type="map">
+            <input port="1" stream="out:ForwardRequestSOAP11_1"/>
+            <output port="1" stream="out:SendResponseSOAP11_1"/>
+            <target-list>
+                <item name="input" selection="none"/>
+                <expressions>
+                    <include field="RemoteServer">input1.UrlReplaceTo</include>
+                    <include field="StreamBaseServer">input1.UrlReplaceFrom</include>
+                    <include field="RequestId">input1.RequestId</include>
+                    <include field="RequestData">input1.RequestData</include>
+                    <include field="ResponseData">input1.ResponseData</include>
+                    <include field="Status">input1.Status</include>
+                    <include field="ServiceName">input1.ServiceName</include>
+                    <include field="RequestIPAddress">input1.RequestIPAddress</include>
+                    <include field="SoapAction">input1.SoapAction</include>
+                    <include field="StartDt">input1.StartDt</include>
+                    <include field="EndDt">now()</include>
+                    <include field="WSInterval">input1.WSInterval</include>
+                    <include field="MessageInfo">input1.RequestData</include>
+                    <include field="MessageType">input1.MessageType</include>
+                    <include field="SubScriptionId">input1.SubScriptionId</include>
+                    <include field="WorkFlowName">input1.WorkFlowName</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="Union" type="union">
+            <input port="1" stream="out:SendResponseSOAP11_1"/>
+            <input port="2" stream="out:SendResponseSOAP11Copy3_1"/>
+            <input port="3" stream="out:SendResponseSOAP11Copy_1"/>
+            <output port="1" stream="out:Union_1"/>
+            <param name="strict" value="false"/>
+        </box>
+        <box name="SplitPost" type="split">
+            <input port="1" stream="out:Union_1"/>
+            <output port="1" stream="OutputStreamPOST"/>
+            <output port="2" stream="out:SplitPost_2"/>
+            <output port="3" stream="out:SplitPost_3"/>
+            <param name="output-count" value="3"/>
+        </box>
+        <output-stream name="OutputStreamPOST"/>
+        <module-reference name="saveLogForSOAP11">
+            <input name="InputStream" port="1" stream="out:SplitPost_2"/>
+            <error stream="out:saveLogForSOAP11_1_error"/>
+            <param name="file" value="com.perkinelmer.pkisignals.saveLog"/>
+        </module-reference>
+        <box name="Union2" type="union">
+            <input port="1" stream="out:SplitPost_3"/>
+            <input port="2" stream="out:SplitGet_2"/>
+            <output port="1" stream="OutputStreamLiveView"/>
+            <param name="strict" value="false"/>
+        </box>
+        <output-stream name="OutputStreamLiveView"/>
+        <box name="OutputAdapterCopy" type="outputadapter">
+            <input port="1" stream="out:saveLogForSOAP11_1_error"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.streambase.sb.adapter.xmlfilewriter.XMLFileWriter"/>
+            <param name="BufferSize" value="0"/>
+            <param name="Charset" value="UTF-8"/>
+            <param name="Escape" value="false"/>
+            <param name="FileName" value="unSaveLog.xml"/>
+            <param name="FlushInterval" value="0"/>
+            <param name="MaxFileSize" value="0"/>
+            <param name="TruncateFile" value="false"/>
+            <param name="UseDefaultCharset" value="false"/>
+            <param name="logLevel" value="ERROR"/>
+        </box>
+    </add>
+</modify>

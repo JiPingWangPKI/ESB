@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><application-layout>
+    <component name="InputStream">
+        <param name="gui:x" value="-1992"/>
+        <param name="gui:y" value="414"/>
+    </component>
+    <component name="CheckAuthority">
+        <param name="gui:x" value="-1697"/>
+        <param name="gui:y" value="358"/>
+        <param name="gui:bends:1" value="-1723,434;-1713,388"/>
+    </component>
+    <component name="saveLogForGET">
+        <param name="gui:x" value="-456"/>
+        <param name="gui:y" value="355"/>
+        <param name="gui:bends:1" value="-509,401;-505,385"/>
+    </component>
+    <component name="saveLogForSOAP11">
+        <param name="gui:x" value="485"/>
+        <param name="gui:y" value="10"/>
+        <param name="gui:bends:1" value="432,56;436,40"/>
+    </component>
+    <component name="AddStartTime">
+        <param name="gui:x" value="-1907"/>
+        <param name="gui:y" value="414"/>
+    </component>
+    <component name="ErrorResponse">
+        <param name="gui:x" value="-1328"/>
+        <param name="gui:y" value="467"/>
+        <param name="gui:bends:1" value="-1374,454;-1364,497"/>
+    </component>
+    <component name="FilterAuthoritys">
+        <param name="gui:x" value="-1457"/>
+        <param name="gui:y" value="414"/>
+    </component>
+    <component name="FilterHttpMethod">
+        <param name="gui:x" value="-1328"/>
+        <param name="gui:y" value="361"/>
+        <param name="gui:bends:1" value="-1361,434;-1351,391"/>
+    </component>
+    <component name="FindContentTypeForRemote">
+        <param name="gui:x" value="-787"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="FindSoapActionForRemote">
+        <param name="gui:x" value="-294"/>
+        <param name="gui:y" value="-89"/>
+    </component>
+    <component name="FliterCyclicCallItself">
+        <param name="gui:x" value="-1110"/>
+        <param name="gui:y" value="27"/>
+        <param name="gui:bends:1" value="-1208,381;-1128,57"/>
+    </component>
+    <component name="ForwardRequestCopy">
+        <param name="gui:x" value="-959"/>
+        <param name="gui:y" value="371"/>
+    </component>
+    <component name="ForwardRequestPOST">
+        <param name="gui:x" value="-294"/>
+        <param name="gui:y" value="143"/>
+    </component>
+    <component name="ForwardRequestSOAP11">
+        <param name="gui:x" value="-129"/>
+        <param name="gui:y" value="-89"/>
+    </component>
+    <component name="ForwardRequestSOAP12">
+        <param name="gui:x" value="-294"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="GetRequestElementsForGet">
+        <param name="gui:x" value="-1110"/>
+        <param name="gui:y" value="371"/>
+    </component>
+    <component name="GetRequestElementsForPost">
+        <param name="gui:x" value="-959"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="NoAuthoritys">
+        <param name="gui:x" value="-1697"/>
+        <param name="gui:y" value="454"/>
+        <param name="gui:bends:1" value="-1734,454;-1728,484"/>
+    </component>
+    <component name="OutputAdapter">
+        <param name="gui:x" value="-294"/>
+        <param name="gui:y" value="355"/>
+    </component>
+    <component name="OutputAdapterCopy">
+        <param name="gui:x" value="621"/>
+        <param name="gui:y" value="10"/>
+    </component>
+    <component name="SendResponseSOAP11">
+        <param name="gui:x" value="18"/>
+        <param name="gui:y" value="-89"/>
+    </component>
+    <component name="SendResponseSOAP11Copy">
+        <param name="gui:x" value="-129"/>
+        <param name="gui:y" value="143"/>
+    </component>
+    <component name="SendResponseSOAP11Copy2">
+        <param name="gui:x" value="-787"/>
+        <param name="gui:y" value="371"/>
+    </component>
+    <component name="SendResponseSOAP11Copy3">
+        <param name="gui:x" value="-129"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="SplitGet">
+        <param name="gui:x" value="-638"/>
+        <param name="gui:y" value="371"/>
+    </component>
+    <component name="SplitPost">
+        <param name="gui:x" value="275"/>
+        <param name="gui:y" value="24"/>
+        <param name="gui:height" value="65"/>
+        <param name="gui:bends:1" value="237,57;237,56"/>
+    </component>
+    <component name="Union">
+        <param name="gui:x" value="170"/>
+        <param name="gui:y" value="27"/>
+        <param name="gui:bends:1" value="110,-59;136,47"/>
+        <param name="gui:bends:3" value="-18,173;8,67"/>
+    </component>
+    <component name="Union2">
+        <param name="gui:x" value="485"/>
+        <param name="gui:y" value="404"/>
+        <param name="gui:bends:1" value="364,69;452,424"/>
+        <param name="gui:bends:2" value="-483,401;-473,444"/>
+    </component>
+    <component name="UnionAuthority">
+        <param name="gui:x" value="-1553"/>
+        <param name="gui:y" value="414"/>
+        <param name="gui:bends:1" value="-1598,388;-1588,434"/>
+        <param name="gui:bends:2" value="-1609,484;-1603,454"/>
+    </component>
+    <component name="UseAuthoritys">
+        <param name="gui:x" value="-1818"/>
+        <param name="gui:y" value="414"/>
+    </component>
+    <component name="addMessageTypePOST">
+        <param name="gui:x" value="-456"/>
+        <param name="gui:y" value="143"/>
+        <param name="gui:bends:1" value="-546,67;-520,173"/>
+    </component>
+    <component name="addMessageTypeSOAP11">
+        <param name="gui:x" value="-456"/>
+        <param name="gui:y" value="-89"/>
+        <param name="gui:bends:1" value="-567,47;-541,-59"/>
+    </component>
+    <component name="addMessageTypeSOAP12">
+        <param name="gui:x" value="-456"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="fiterSoapForRemote">
+        <param name="gui:x" value="-638"/>
+        <param name="gui:y" value="27"/>
+    </component>
+    <component name="OutputStreamError">
+        <param name="gui:x" value="-1110"/>
+        <param name="gui:y" value="467"/>
+    </component>
+    <component name="OutputStreamGET">
+        <param name="gui:x" value="-456"/>
+        <param name="gui:y" value="239"/>
+        <param name="gui:bends:1" value="-535,391;-505,269"/>
+    </component>
+    <component name="OutputStreamLiveView">
+        <param name="gui:x" value="621"/>
+        <param name="gui:y" value="404"/>
+    </component>
+    <component name="OutputStreamPOST">
+        <param name="gui:x" value="485"/>
+        <param name="gui:y" value="-106"/>
+        <param name="gui:bends:1" value="406,44;436,-76"/>
+    </component>
+</application-layout>

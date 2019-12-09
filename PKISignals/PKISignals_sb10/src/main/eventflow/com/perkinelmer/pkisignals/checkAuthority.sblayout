@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><application-layout>
+    <component name="InputStream">
+        <param name="gui:x" value="-424"/>
+        <param name="gui:y" value="6"/>
+    </component>
+    <component name="JDBCTable">
+        <param name="gui:x" value="226"/>
+        <param name="gui:y" value="46"/>
+        <param name="gui:width" value="80"/>
+        <param name="gui:height" value="56"/>
+    </component>
+    <component name="Filter">
+        <param name="gui:x" value="124"/>
+        <param name="gui:y" value="-88"/>
+    </component>
+    <component name="Filter2">
+        <param name="gui:x" value="323"/>
+        <param name="gui:y" value="-189"/>
+    </component>
+    <component name="Filter3">
+        <param name="gui:x" value="543"/>
+        <param name="gui:y" value="-65"/>
+    </component>
+    <component name="Map">
+        <param name="gui:x" value="236"/>
+        <param name="gui:y" value="-78"/>
+    </component>
+    <component name="Map2">
+        <param name="gui:x" value="440"/>
+        <param name="gui:y" value="-179"/>
+    </component>
+    <component name="Map3">
+        <param name="gui:x" value="660"/>
+        <param name="gui:y" value="-65"/>
+        <param name="gui:bends:1" value="622,-25;624,-35"/>
+    </component>
+    <component name="Map4">
+        <param name="gui:x" value="660"/>
+        <param name="gui:y" value="31"/>
+        <param name="gui:bends:1" value="610,-45;623,61"/>
+    </component>
+    <component name="Map5">
+        <param name="gui:x" value="-170"/>
+        <param name="gui:y" value="-88"/>
+        <param name="gui:bends:1" value="-221,26;-201,-58"/>
+    </component>
+    <component name="Map6">
+        <param name="gui:x" value="-170"/>
+        <param name="gui:y" value="101"/>
+        <param name="gui:bends:1" value="-208,46;-188,131"/>
+    </component>
+    <component name="Union">
+        <param name="gui:x" value="789"/>
+        <param name="gui:y" value="-74"/>
+        <param name="gui:height" value="78"/>
+        <param name="gui:bends:1" value="716,-149;738,-54"/>
+        <param name="gui:bends:2" value="416,-48;452,-195;722,-195;758,-45"/>
+        <param name="gui:bends:4" value="743,61;763,-26"/>
+        <param name="gui:bends:5" value="748,131;779,-16"/>
+    </component>
+    <component name="accountQuery">
+        <param name="gui:x" value="34"/>
+        <param name="gui:y" value="-88"/>
+    </component>
+    <component name="fiterRequestIPAddress">
+        <param name="gui:x" value="-314"/>
+        <param name="gui:y" value="6"/>
+    </component>
+    <component name="getUserName">
+        <param name="gui:x" value="-73"/>
+        <param name="gui:y" value="-88"/>
+    </component>
+    <component name="serviceQuery">
+        <param name="gui:x" value="236"/>
+        <param name="gui:y" value="-189"/>
+        <param name="gui:bends:1" value="209,-68;226,-159"/>
+    </component>
+    <component name="subScriptionQuery">
+        <param name="gui:x" value="440"/>
+        <param name="gui:y" value="-65"/>
+        <param name="gui:bends:1" value="393,-169;425,-35"/>
+    </component>
+    <component name="OutputStream">
+        <param name="gui:x" value="869"/>
+        <param name="gui:y" value="-65"/>
+    </component>
+</application-layout>

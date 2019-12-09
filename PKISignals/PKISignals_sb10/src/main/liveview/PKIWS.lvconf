@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<liveview-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.streambase.com/schemas/lvconf/">
+  <application filename="com.perkinelmer.pkisignals.0000_PKIWS" id="PKIWS">
+    <parameters>
+      <parameter name="UrlReplaceFrom" value="&quot;127.0.0.1:8001&quot;"/>
+      <parameter name="UrlReplaceFrom1" value="&quot;127.0.0.1:8001&quot;"/>
+      <parameter name="UrlReplaceTo" value="&quot;www.webxml.com.cn&quot;"/>
+      <parameter name="RequestIPAddress" value="&quot;172.26.11.89&quot;"/>
+      <parameter name="UseAuthoritys" value="false"/>
+      <parameter name="WorkFlowName" value="&quot;8000_PKIWS&quot;"/>
+    </parameters>
+  </application>
+</liveview-configuration>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liveview-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.streambase.com/schemas/lvconf/">
+  <data-table id="CalLogs">
+    <fields>
+      <field name="RemoteServer" type="string"/>
+      <field name="StreamBaseServer" type="string"/>
+      <field name="RequestId" type="string"/>
+      <field name="RequestData" type="string"/>
+      <field name="ResponseData" type="string"/>
+      <field name="Status" type="string"/>
+      <field name="ServiceName" type="string"/>
+      <field name="RequestIPAddress" type="string"/>
+      <field name="SoapAction" type="string"/>
+      <field name="StartDt" type="timestamp"/>
+      <field name="EndDt" type="timestamp"/>
+      <field name="WSInterval" type="int"/>
+      <field name="MessageInfo" type="string"/>
+      <field name="MessageType" type="string"/>
+      <field name="SubScriptionId" type="string"/>
+      <field name="WorkFlowName" type="string"/>
+    </fields>
+    <primary-key>
+      <field ref="RequestId"/>
+    </primary-key>
+    <data-sources>
+      <data-source>
+        <application application-ref="PKIWS" output-stream="DataOut"/>
+      </data-source>
+    </data-sources>
+  </data-table>
+</liveview-configuration>

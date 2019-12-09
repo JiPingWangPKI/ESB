@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modify version="10.3.0_0d7585e34d7951c38306c510b7c74a27a27fb955">
+    <add>
+        <annotations>
+            <annotation name="hygienic"/>
+        </annotations>
+        <type-metadata>
+            <param name="type" value="module"/>
+            <param name="fully-qualified-name" value="com.perkinelmer.pkisignals.checkAuthority"/>
+        </type-metadata>
+        <memory-model-settings/>
+        <dynamic-variables/>
+        <data name="JDBCTable" type="jdbctable">
+            <param name="connection" value="SQLConnection"/>
+        </data>
+        <stream name="InputStream">
+            <schema>
+                <field name="RequestId" type="string"/>
+                <field name="HttpHeaders" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Key" type="string"/>
+                            <field name="Value" type="string"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="Cookies" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Name" type="string"/>
+                            <field name="Value" type="string"/>
+                            <field name="MaxAge" type="int"/>
+                            <field name="Comment" type="string"/>
+                            <field name="Domain" type="string"/>
+                            <field name="HttpOnly" type="bool"/>
+                            <field name="Path" type="string"/>
+                            <field name="Secure" type="bool"/>
+                            <field name="Version" type="int"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="RemoteHost" type="string"/>
+                <field name="RemotePort" type="int"/>
+                <field name="URI" type="string"/>
+                <field name="URL" type="string"/>
+                <field name="ContentType" type="string"/>
+                <field name="ContentLength" type="long"/>
+                <field name="Method" type="string"/>
+                <field name="callback" type="string"/>
+                <field name="ParametersList" type="list">
+                    <element-type type="tuple">
+                        <schema>
+                            <field name="Key" type="string"/>
+                            <field name="Value" type="string"/>
+                        </schema>
+                    </element-type>
+                </field>
+                <field name="Body" type="string"/>
+                <field name="Data" type="string"/>
+                <field name="StartDt" type="timestamp"/>
+                <field name="UrlReplaceFrom" type="string"/>
+                <field name="UrlReplaceFrom1" type="string"/>
+                <field name="UrlReplaceTo" type="string"/>
+                <field name="UseAuthoritys" type="bool"/>
+                <field name="RequestIPAddress" type="string"/>
+                <field name="WorkFlowName" type="string"/>
+            </schema>
+        </stream>
+        <box name="fiterRequestIPAddress" type="filter">
+            <input port="1" stream="InputStream"/>
+            <output port="1" stream="out:fiterRequestIPAddress_1"/>
+            <output port="2" stream="out:fiterRequestIPAddress_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="RequestIPAddress==input1.RemoteHost"/>
+            <param name="expression.1" value="RequestIPAddress!=input1.RemoteHost"/>
+        </box>
+        <box name="Map5" type="map">
+            <input port="1" stream="out:fiterRequestIPAddress_1"/>
+            <output port="1" stream="out:Map5_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="username">''</include>
+                    <include field="password">''</include>
+                    <include field="servicename">''</include>
+                    <include field="servicecode">''</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="Map6" type="map">
+            <input port="1" stream="out:fiterRequestIPAddress_2"/>
+            <output port="1" stream="out:Map6_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'false'</include>
+                    <include field="checkAuthorityMsg">'the remoteHost is error!'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="getUserName" type="java">
+            <input port="1" stream="out:Map5_1"/>
+            <output port="1" stream="out:getUserName_1"/>
+            <param name="start:state" value="true"/>
+            <param name="javaclass" value="com.perkinelmer.service.renji.getAttributes"/>
+        </box>
+        <box name="accountQuery" type="query">
+            <input port="1" stream="out:getUserName_1"/>
+            <output port="1" stream="out:accountQuery_1"/>
+            <dataref id="jdbctable" name="JDBCTable"/>
+            <param name="sql" value="select Id as accountId from wsm.dbo.Accounts &#13;&#10;where  &#13;&#10;Password={password} and &#13;&#10;SystemName={username}"/>
+            <param name="use-callable-statements" value="false"/>
+            <param name="send-null-tuple" value="true"/>
+            <param name="jdbc-output-column" value="0"/>
+            <target-list>
+                <item name="table" selection="all"/>
+                <item name="input" selection="all"/>
+            </target-list>
+            <param name="result-set" value="query"/>
+        </box>
+        <box name="Filter" type="filter">
+            <input port="1" stream="out:accountQuery_1"/>
+            <output port="1" stream="out:Filter_1"/>
+            <output port="2" stream="out:Filter_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="!isnull(input1.accountId)"/>
+            <param name="expression.1" value="isnull(input1.accountId)"/>
+        </box>
+        <box name="Map" type="map">
+            <input port="1" stream="out:Filter_2"/>
+            <output port="1" stream="out:Map_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'false'</include>
+                    <include field="checkAuthorityMsg">'fail account,please try again!'</include>
+                    <include field="subscriptionId">'1'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="serviceQuery" type="query">
+            <input port="1" stream="out:Filter_1"/>
+            <output port="1" stream="out:serviceQuery_1"/>
+            <dataref id="jdbctable" name="JDBCTable"/>
+            <param name="sql" value="select Id as serviceId from wsm.dbo.Services &#13;&#10;where&#13;&#10;ServiceCode={servicecode} and&#13;&#10;ServiceName={servicename}"/>
+            <param name="use-callable-statements" value="false"/>
+            <param name="send-null-tuple" value="true"/>
+            <param name="jdbc-output-column" value="0"/>
+            <target-list>
+                <item name="table" selection="all"/>
+                <item name="input" selection="all"/>
+            </target-list>
+            <param name="result-set" value="query"/>
+        </box>
+        <box name="Filter2" type="filter">
+            <input port="1" stream="out:serviceQuery_1"/>
+            <output port="1" stream="out:Filter2_1"/>
+            <output port="2" stream="out:Filter2_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="!isnull(input1.serviceId)"/>
+            <param name="expression.1" value="isnull(input1.serviceId)"/>
+        </box>
+        <box name="Map2" type="map">
+            <input port="1" stream="out:Filter2_2"/>
+            <output port="1" stream="out:Map2_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'false'</include>
+                    <include field="checkAuthorityMsg">'fail service,please try again!'</include>
+                    <include field="subscriptionId">'1'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="subScriptionQuery" type="query">
+            <input port="1" stream="out:Filter2_1"/>
+            <output port="1" stream="out:subScriptionQuery_1"/>
+            <dataref id="jdbctable" name="JDBCTable"/>
+            <param name="sql" value="select Id as subscriptionId from wsm.dbo.SubScriptions &#13;&#10;where  &#13;&#10;Account_Id={accountId} and &#13;&#10;Service_Id={serviceId}"/>
+            <param name="use-callable-statements" value="false"/>
+            <param name="send-null-tuple" value="true"/>
+            <param name="jdbc-output-column" value="0"/>
+            <target-list>
+                <item name="table" selection="all"/>
+                <item name="input" selection="all"/>
+            </target-list>
+            <param name="result-set" value="explicit-schema"/>
+            <schema>
+                <field name="subscriptionId" type="string"/>
+            </schema>
+        </box>
+        <box name="Filter3" type="filter">
+            <input port="1" stream="out:subScriptionQuery_1"/>
+            <output port="1" stream="out:Filter3_1"/>
+            <output port="2" stream="out:Filter3_2"/>
+            <param name="autogen-nomatch-port" value="false"/>
+            <param name="expression.0" value="!isnull(input1.subscriptionId)"/>
+            <param name="expression.1" value="isnull(input1.subscriptionId)"/>
+        </box>
+        <box name="Map3" type="map">
+            <input port="1" stream="out:Filter3_2"/>
+            <output port="1" stream="out:Map3_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'false'</include>
+                    <include field="checkAuthorityMsg">'fail subscription,please try again!'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="Map4" type="map">
+            <input port="1" stream="out:Filter3_1"/>
+            <output port="1" stream="out:Map4_1"/>
+            <target-list>
+                <item name="input" selection="all"/>
+                <expressions>
+                    <include field="checkAuthority">'success'</include>
+                    <include field="checkAuthorityMsg">'no problem!'</include>
+                </expressions>
+            </target-list>
+        </box>
+        <box name="Union" type="union">
+            <input port="1" stream="out:Map2_1"/>
+            <input port="2" stream="out:Map_1"/>
+            <input port="3" stream="out:Map3_1"/>
+            <input port="4" stream="out:Map4_1"/>
+            <input port="5" stream="out:Map6_1"/>
+            <output port="1" stream="OutputStream"/>
+            <param name="strict" value="false"/>
+        </box>
+        <output-stream name="OutputStream"/>
+    </add>
+</modify>

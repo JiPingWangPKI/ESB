@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><application-layout>
+    <component name="Module">
+        <param name="gui:x" value="96"/>
+        <param name="gui:y" value="15"/>
+        <param name="gui:height" value="65"/>
+    </component>
+    <component name="OutputAdapterERROR">
+        <param name="gui:x" value="291"/>
+        <param name="gui:y" value="75"/>
+        <param name="gui:bends:1" value="197,51;209,105"/>
+    </component>
+    <component name="OutputAdapterGET">
+        <param name="gui:x" value="291"/>
+        <param name="gui:y" value="-41"/>
+        <param name="gui:bends:1" value="223,43;235,-11"/>
+    </component>
+    <component name="OutputAdapterPOST">
+        <param name="gui:x" value="291"/>
+        <param name="gui:y" value="-157"/>
+        <param name="gui:bends:1" value="196,35;236,-127"/>
+    </component>
+    <component name="WSInputAdapter">
+        <param name="gui:x" value="-139"/>
+        <param name="gui:y" value="17"/>
+    </component>
+    <component name="addGlobalParam">
+        <param name="gui:x" value="-20"/>
+        <param name="gui:y" value="17"/>
+    </component>
+    <component name="DataOut">
+        <param name="gui:x" value="291"/>
+        <param name="gui:y" value="171"/>
+        <param name="gui:bends:1" value="173,60;207,201"/>
+    </component>
+</application-layout>

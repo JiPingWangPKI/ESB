@@ -1,0 +1,131 @@
+2018-06-29 10:35:12 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 09:37:13 [LogBack ERROR] WSInputAdapter - Failed to start the web server on port 8882
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) ~[na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.addOrQueueContainer(StreamBaseNode.java:480) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.addContainer(StreamBaseNode.java:466) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.addAllContainers(StreamBaseServer.java:553) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.loadDeploy(StreamBaseServer.java:581) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.xmlrpc.current.ADD_DEPLOYHandler.addDeployImpl(ADD_DEPLOYHandler.java:95) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.xmlrpc.current.ADD_DEPLOYHandler.process(ADD_DEPLOYHandler.java:56) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.xmlrpc.XmlRpcManager.process(XmlRpcManager.java:301) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.StreamBaseHTTPServer.processXmlRpcRequest(StreamBaseHTTPServer.java:810) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.handlers.Current_SBXMLRPCNetHandler.process(Current_SBXMLRPCNetHandler.java:65) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.HTTPServer$HTTPConnection.mainLoop(HTTPServer.java:335) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.HTTPServer$HTTPConnection.call(HTTPServer.java:252) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.StreamBaseHTTPServer$SBHTTPConnection.call(StreamBaseHTTPServer.java:111) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.net.HTTPServer$HTTPConnection.call(HTTPServer.java:193) [sbserver.jar:7.6.7.3]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+	at com.streambase.sb.util.ThreadUtil$RegisteringThreadFactory$1.run(ThreadUtil.java:35) [sbclient.jar:7.6.7.3]
+2018-07-06 09:40:10 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 09:42:35 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 09:47:48 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 09:47:52 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 10:07:26 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 10:10:54 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-06 10:36:01 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"
+2018-07-12 11:05:27 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.11.227:8800/favicon.ico?WSDL
+2018-08-05 14:46:53 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:47:14 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:48:00 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:19 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:28 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:50:40 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-05 14:52:39 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:29:27 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:29:48 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:30:01 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:30:22 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:34:02 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:34:23 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:42:59 [LogBack ERROR] Renji - java.net.ConnectException: Connection timed out: connect
+2018-08-06 09:44:50 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:48:14 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:56:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:56:50 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 09:56:54 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:16:31 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:36:49 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:42:53 [LogBack ERROR] WSInputAdapter - Failed to start the web server on port 8882
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) ~[na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_F14E6C1A417687C7AA62CD74BEE0F6A4.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-06 10:45:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:45:33 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-06 10:49:26 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-15 10:20:58 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 11:15:32 [LogBack ERROR] WSInputAdapter - Failed to start the web server on port 8884
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[jetty-all-9.2.1.v20140609.jar:9.2.1.v20140609]
+	at com.streambase.sb.adapter.webserver.common.WebServer.startServer(WebServer.java:204) ~[na:na]
+	at com.streambase.sb.adapter.webserver.input.WebServerRequest.resume(WebServerRequest.java:369) [na:na]
+	at com.streambase.sb.operator.Operator.resumeImpl(Operator.java:1691) [sbclient.jar:7.6.7.3]
+	at com.streambase.sb.runtime.OperatorCaretakerImpl.resume(OperatorCaretakerImpl.java:697) [sbserver.jar:7.6.7.3]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.oplocal__java_1_W_S_Input_Adapter_1start_(Unknown Source) [sbserver.jar:na]
+	at cm._default_.sbd_7D771AC8396DAD0B90F33513983F528E.start(Unknown Source) [sbserver.jar:na]
+	at com.streambase.sb.runtime.MainModule.startMain(MainModule.java:453) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.startImpl(Container.java:731) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.containers.Container.start(Container.java:706) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseNode.start(StreamBaseNode.java:557) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.StreamBaseServer.<init>(StreamBaseServer.java:294) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.mainImpl(SBD.java:221) [sbserver.jar:7.6.7.3]
+	at com.streambase.sb.sbd.SBD.main(SBD.java:44) [sbserver.jar:7.6.7.3]
+2018-08-16 11:17:39 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 11:18:06 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 11:21:17 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-16 14:13:09 [LogBack ERROR] Renji - java.io.FileNotFoundException: http://172.26.82.208:8800/favicon.ico?WSDL
+2018-08-17 10:10:13 [LogBack ERROR] Renji - com.streambase.sb.NullValueException: Encountered a null value in field "RequestData"

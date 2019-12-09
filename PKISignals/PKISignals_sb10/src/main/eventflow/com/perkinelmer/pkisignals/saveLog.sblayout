@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><application-layout>
+    <component name="InputStream">
+        <param name="gui:x" value="-8"/>
+        <param name="gui:y" value="-189"/>
+    </component>
+    <component name="JDBCTable">
+        <param name="gui:x" value="67"/>
+        <param name="gui:y" value="-58"/>
+        <param name="gui:width" value="80"/>
+        <param name="gui:height" value="56"/>
+    </component>
+    <component name="SaveLog">
+        <param name="gui:x" value="77"/>
+        <param name="gui:y" value="-189"/>
+    </component>
+    <component name="OutputStream">
+        <param name="gui:x" value="158"/>
+        <param name="gui:y" value="-189"/>
+    </component>
+</application-layout>

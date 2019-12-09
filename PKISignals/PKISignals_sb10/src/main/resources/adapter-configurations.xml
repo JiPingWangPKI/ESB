@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<adapter-configurations>
+    <adapter-configuration name="webservers">
+    		<section name="webserver">
+                <setting name="id" val="Web Server Port 0000"/>
+                <setting name="Port" val="8001"/>
+                <setting name="IdleTimeoutMS" val="300000"/>
+                <setting name="OutputBufferSize" val="32768"/>
+                <setting name="RequestHeaderSize" val="8192"/>
+                <setting name="ResponseHeaderSize" val="8192"/>
+                <setting name="SendServerVersion" val="true"/>
+                <setting name="SendDateHeader" val="false"/>
+                <setting name="GZipMimeTypes" val="text/html,text/plain,text/xml,application/xhtml+xml,text/css,application/javascript,text/javascript,image/svg+xml"/>
+                <setting name="WebSocketAsyncWriteTimeoutMS" val="50000"/>
+                <setting name="WebSocketIdleTimeoutMS" val="300000"/>
+                <setting name="ReuseAddress" val="true"/>
+           </section>
+        </adapter-configuration>
+</adapter-configurations>
