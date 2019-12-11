@@ -4,11 +4,11 @@
 	上海仁济南院需要搭建一个集成平台，需要接入各个业务系统中转，并做业务数据的实时分析和预警，为此streambase可以担任ESB数据总线的角色；现稳定运行于上海仁济南院，中转HIS与业务系统LIS、UIS、RIS等的信息交互中转站、再结合spotfire做业务数据的分析和实时预警；
 整个平台有四个部分：
 
-1）[PKISignalsSBESB](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalsSBESB)：streambase服务担任ESB数据总线
+1）[PKISignalSBESB](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBSB)：streambase服务担任ESB数据总线
 
-2）[PKISignalServer](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalServer):ESB所在机器提供的对外操控API
+2）[PKISignalServer](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBServer):ESB所在机器提供的对外操控API
 
-3）[PKISignalsManager](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalsManager)：ESB项目后台管理系统，可以控制ESB服务的很多配置（监控节点状态、修改占用端口、服务开关、创建新ESB节点组件、删除ESB节点组件......,就是调用运行在PKISignalsSBESB所在服务器上的PKISignalServer提供的服务来操控的） 
+3）[PKISignalsManager](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBManager)：ESB项目后台管理系统，可以控制ESB服务的很多配置（监控节点状态、修改占用端口、服务开关、创建新ESB节点组件、删除ESB节点组件......,就是调用运行在PKISignalsSBESB所在服务器上的PKISignalServer提供的服务来操控的） 
 
 4）[spotfire服务](还没有配置出来，等出来再填):分析流转数据、实时预警、监控
 ## 1.2 测试环境地址
@@ -37,8 +37,4 @@
 	2）PKISignalServer安装配置
 	3）PKISIgnalManager安装配置
 	4）spotfire的安装配置（不配置安装也可以主要用于分析用的）
-
-# 四：使用手册（参考各自子项目的文档介绍）
-	1）PKISignalESBSB使用手册
-	2）PKISignalServer使用手册
-	3）PKISIgnalManage使用手册
+	PKISignalManager通过PKISignalServer管理PKISignalSBESB服务
