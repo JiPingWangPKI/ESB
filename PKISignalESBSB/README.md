@@ -25,8 +25,9 @@
 	方式二：项目运行为window service后会根据我们按照window serivce的脚本会出现一个节点文件夹A.X，打开找到路径C:\java\streambase\A.X\application\fragments\com.perkinelmer.PKISignals下的配置文件；C:\java\streambase\A.X\application\shared下的配置文件
 	具体哪些配置文件改哪些参数请看下图
 ![配置文件集一](https://github.com/JiPingWangPKI/ESB/raw/master/resource/LiveViewPConfigs.png)
-![配置文件集二](https://github.com/JiPingWangPKI/ESB/raw/master/resource/SBApplicationConfigs.png)
-
+![配置文件集二](https://github.com/JiPingWangPKI/ESB/raw/master/resource/SBApplicationConfigs.png)	
+# 部分SB图片展示
+![部分SB图片展示](https://github.com/JiPingWangPKI/ESB/raw/master/resource/SB部分图.png)
 # 四：资料共享
 ## 4.1[Streambase开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambase开发手册.md)
 ## 4.2[StreambaseLiveView开发手册](https://github.com/JiPingWangPKI/ESB/blob/master/resource/streambaseLiveView开发手册.md)
