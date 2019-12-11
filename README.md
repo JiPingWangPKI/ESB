@@ -32,13 +32,9 @@
 
 配置负载均衡（[参考链接niginx配置负载均衡](https://www.cnblogs.com/qlqwjy/p/8536779.html)）:负载均衡搭建核心组件（简单方式）
 
-## 3.2 安装服务（参考各自子项目的文档介绍）
+## 3.2 安装使用（参考各自子项目的文档介绍）
 	1）PKISignalESBSB服务的安装配置
 	2）PKISignalServer安装配置
 	3）PKISIgnalManager安装配置
 	4）spotfire的安装配置（不配置安装也可以主要用于分析用的）
-
-# 四：使用手册（参考各自子项目的文档介绍）
-	1）PKISignalESBSB使用手册
-	2）PKISignalServer使用手册
-	3）PKISIgnalManage使用手册
+	
