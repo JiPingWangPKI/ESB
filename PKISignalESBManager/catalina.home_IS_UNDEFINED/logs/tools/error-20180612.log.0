@@ -1,0 +1,10 @@
+2018-06-12 12:56:19.547 [http-nio-8080-exec-8] ERROR t.p.S.S.WorkFlowServiceImpl -java.lang.NullPointerException
+2018-06-12 12:58:44.908 [http-nio-8080-exec-6] ERROR t.p.S.S.WorkFlowServiceImpl -java.lang.NullPointerException
+2018-06-12 14:34:37.050 [http-nio-8080-exec-1] ERROR t.p.S.S.WorkFlowServiceImpl -org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: “.82”附近有语法错误。
+### The error may involve tools.perkinelmer.Mapper.WorkFlowMapper.updateWorkFlow-Inline
+### The error occurred while setting parameters
+### SQL: update wsm.dbo.WorkFlows set name=?,serviceName=?,requestIp=?,targetIp=172.26.82.208:2210,platformIp=?,authority=0,state=1 where workFlowName=?
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: “.82”附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; “.82”附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: “.82”附近有语法错误。
+2018-06-12 16:05:47.904 [http-nio-8080-exec-9] ERROR t.p.S.S.WorkFlowServiceImpl -数据更新失败

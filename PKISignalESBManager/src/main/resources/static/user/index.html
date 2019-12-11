@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户配置</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../layui/css/layui.css"/>
+</head>
+<body>
+	<div class="content">
+		<button class="layui-btn layui-btn-normal" id="addUser">添加用户</button>
+		<table id="usertb" lay-filter="usertb"></table>
+	</div>
+	<div class="bottom"></div>
+	<div id="operate" style="display: none;">
+		<form class='layui-form'>
+			<div class="layui-form-item">
+				<label class='layui-form-label' for='UserName'><span class="red">*</span>用户名称</label>
+				<div class="layui-input-inline">
+					<input type="text" name="UserName" id="UserName" required="" lay-verify='required' autocomplete='off' class="layui-input"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class='layui-form-label' for='PassWord'><span class="red">*</span>密码</label>
+				<input type="checkbox" id="password" name="password" lay-filter="password" lay-skin="switch" lay-text="修改|不变">
+				<div class="layui-input-inline">
+					<input type="password" style="display: none;" name="PassWord" id="PassWord" required="" lay-verify='required' autocomplete='off' class="layui-input"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class='layui-form-label' for='PassWord'><span class="red">*</span>所属角色</label>
+				<div class="layui-input-inline">
+					<div id="forroles"></div>
+					<select id="roles" lay-filter="roles" >
+						<option value="">请分配用户角色</option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class='layui-form-label' for='Cellphone'>联系电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="Cellphone" id="CellPhone" required="" lay-verify='required' autocomplete='off' class="layui-input"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class='layui-form-label' for='Email'>电子邮箱</label>
+				<div class="layui-input-inline">
+					<input type="email" name="Email" id="Email" required="" lay-verify='required' autocomplete='off' class="layui-input"/>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/html" id="barUser">
+ 	 	<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  		<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+	</script>
+	
+	<script src="../jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../layui/layui.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

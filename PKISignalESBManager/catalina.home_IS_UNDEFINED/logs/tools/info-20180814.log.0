@@ -1,0 +1,1343 @@
+2018-08-06 11:24:47.046 [http-nio-8080-exec-6] ERROR o.t.templateparser.ErrorHandler -[THYMELEAF][http-nio-8080-exec-6] Fatal error during parsing
+org.xml.sax.SAXParseException: 元素类型 "input" 必须由匹配的结束标记 "</input>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:333)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-08-06 11:24:47.078 [http-nio-8080-exec-6] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-6] Exception processing template "main/main": Exception parsing document: template="main/main", line 119 - column 7
+2018-08-06 11:24:47.082 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/WSManager] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="main/main", line 119 - column 7] with root cause
+org.xml.sax.SAXParseException: 元素类型 "input" 必须由匹配的结束标记 "</input>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:333)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-08-06 11:34:54.619 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-1] Exception processing template "main/main": Error retrieving value for property "SysUser" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (main/main:56)
+2018-08-06 11:34:54.623 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/WSManager] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error retrieving value for property "SysUser" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (main/main:56)] with root cause
+org.springframework.beans.NotReadablePropertyException: Invalid property 'SysUser' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'SysUser' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:633)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:624)
+	at org.thymeleaf.extras.springsecurity4.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:140)
+	at org.thymeleaf.extras.springsecurity4.dialect.processor.AuthenticationAttrProcessor.getText(AuthenticationAttrProcessor.java:71)
+	at org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor.getModifiedChildren(AbstractTextChildModifierAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractChildrenModifierAttrProcessor.processAttribute(AbstractChildrenModifierAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-08-14 14:38:04.814 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 16252 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 14:38:04.823 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 14:38:06.048 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Tue Aug 14 14:38:06 CST 2018]; root of context hierarchy
+2018-08-14 14:38:08.134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30248d57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 14:38:09.245 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-08-14 14:38:09.268 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 14:38:09.273 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 14:38:09.484 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 14:38:09.485 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3437 ms
+2018-08-14 14:38:09.858 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:38:09.860 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:38:09.861 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:38:09.862 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:38:09.865 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 14:38:09.868 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 14:38:11.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 14:38:11.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 14:38:11.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 14:38:11.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 14:38:12.134 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72f9f27c, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ad4f71, org.springframework.security.web.header.HeaderWriterFilter@3c87e6b7, org.springframework.security.web.authentication.logout.LogoutFilter@30b131b2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@378cfecf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f94a5a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58472096, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c1bdcc2, org.springframework.security.web.session.SessionManagementFilter@3c3a0032, org.springframework.security.web.access.ExceptionTranslationFilter@56a4f272, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68ab0936]
+2018-08-14 14:38:12.307 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Tue Aug 14 14:38:06 CST 2018]; root of context hierarchy
+2018-08-14 14:38:12.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 14:38:12.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 14:38:12.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 14:38:12.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:38:12.454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 14:38:12.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 14:38:12.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 14:38:12.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 14:38:12.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 14:38:12.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 14:38:12.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 14:38:12.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.466 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 14:38:12.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 14:38:12.468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 14:38:12.468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 14:38:12.469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 14:38:12.470 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:38:12.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 14:38:12.473 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:38:12.473 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 14:38:12.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 14:38:12.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 14:38:12.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:38:12.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:38:12.483 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:38:12.504 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:38:12.504 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:38:12.526 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:12.528 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:12.609 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:13.528 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 14:38:13.593 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+2018-08-14 14:38:13.599 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2018-08-14 14:38:13.613 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
+2018-08-14 14:38:13.796 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-14 14:38:13.803 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-08-14 14:38:13.806 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Tue Aug 14 14:38:06 CST 2018]; root of context hierarchy
+2018-08-14 14:38:13.807 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-08-14 14:40:25.263 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 15556 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 14:40:25.288 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 14:40:25.890 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 14:40:25 CST 2018]; root of context hierarchy
+2018-08-14 14:40:28.704 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7de35d56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 14:40:30.183 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-08-14 14:40:30.209 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 14:40:30.211 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 14:40:30.427 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 14:40:30.428 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4538 ms
+2018-08-14 14:40:30.957 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:40:30.958 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:40:30.960 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:40:30.963 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:40:30.965 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 14:40:30.965 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 14:40:33.466 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 14:40:33.466 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 14:40:33.466 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 14:40:33.467 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 14:40:33.692 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a4dda2, org.springframework.security.web.context.SecurityContextPersistenceFilter@42fc4ac4, org.springframework.security.web.header.HeaderWriterFilter@49580ca8, org.springframework.security.web.authentication.logout.LogoutFilter@4ed18798, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e5efcab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20a24edf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77524ca7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d2fb82, org.springframework.security.web.session.SessionManagementFilter@525647f3, org.springframework.security.web.access.ExceptionTranslationFilter@3a3b10f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7abeabe9]
+2018-08-14 14:40:33.909 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 14:40:25 CST 2018]; root of context hierarchy
+2018-08-14 14:40:34.099 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.103 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 14:40:34.103 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 14:40:34.104 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.105 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 14:40:34.106 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:40:34.115 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 14:40:34.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 14:40:34.118 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 14:40:34.119 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 14:40:34.119 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.120 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 14:40:34.125 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.125 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 14:40:34.125 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.126 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 14:40:34.129 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 14:40:34.132 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.133 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 14:40:34.133 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 14:40:34.134 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 14:40:34.137 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 14:40:34.137 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 14:40:34.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:40:34.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 14:40:34.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:40:34.142 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 14:40:34.142 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 14:40:34.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:40:34.146 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:40:34.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:40:34.183 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:40:34.183 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:40:34.215 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:40:34.216 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:40:34.345 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:40:36.350 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 14:40:36.439 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+2018-08-14 14:40:36.443 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2018-08-14 14:40:36.471 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
+2018-08-14 14:40:36.652 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-14 14:40:36.665 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-08-14 14:40:36.667 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 14:40:25 CST 2018]; root of context hierarchy
+2018-08-14 14:40:36.669 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-08-14 14:43:06.453 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 8996 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 14:43:06.462 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 14:43:07.079 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 14:43:07 CST 2018]; root of context hierarchy
+2018-08-14 14:43:09.715 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8316ce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 14:43:10.968 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8880 (http)
+2018-08-14 14:43:10.996 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 14:43:10.998 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 14:43:11.262 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 14:43:11.263 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4184 ms
+2018-08-14 14:43:11.773 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:43:11.776 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:43:11.776 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:43:11.777 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:43:11.782 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 14:43:11.783 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 14:43:14.281 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 14:43:14.282 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 14:43:14.282 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 14:43:14.282 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 14:43:14.501 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7971c2a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@8fcc534, org.springframework.security.web.header.HeaderWriterFilter@47044f7d, org.springframework.security.web.authentication.logout.LogoutFilter@40d848f9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@de579ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e599100, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33d7765a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fd39436, org.springframework.security.web.session.SessionManagementFilter@7b14c61, org.springframework.security.web.access.ExceptionTranslationFilter@6c075e9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@357f6391]
+2018-08-14 14:43:14.788 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 14:43:07 CST 2018]; root of context hierarchy
+2018-08-14 14:43:14.962 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 14:43:14.964 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:14.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 14:43:14.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:14.973 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 14:43:14.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:43:14.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 14:43:14.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 14:43:14.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 14:43:14.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 14:43:14.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:14.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 14:43:14.998 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 14:43:15.001 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:15.002 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 14:43:15.003 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:15.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 14:43:15.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:15.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 14:43:15.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 14:43:15.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 14:43:15.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 14:43:15.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 14:43:15.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:15.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 14:43:15.016 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 14:43:15.016 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:43:15.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 14:43:15.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 14:43:15.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 14:43:15.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:43:15.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:43:15.053 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:43:15.054 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 14:43:15.086 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:43:15.087 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:43:15.216 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:43:16.819 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 14:43:17.074 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8880 (http)
+2018-08-14 14:43:17.082 [main] INFO  tools.perkinelmer.Application -Started Application in 11.354 seconds (JVM running for 12.654)
+2018-08-14 14:43:31.986 [http-nio-8880-exec-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 14:43:31.987 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 14:43:32.061 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2018-08-14 14:44:01.302 [http-nio-8880-exec-8] ERROR o.a.tomcat.jdbc.pool.ConnectionPool -Unable to create initial connections of pool.
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:167)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy78.findByUserName(Unknown Source)
+	at tools.perkinelmer.security.CustomUserService.loadUserByUsername(CustomUserService.java:25)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:114)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-08-14 14:44:01.314 [http-nio-8880-exec-8] ERROR o.s.s.w.a.UsernamePasswordAuthenticationFilter -An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:126)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:79)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:167)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy78.findByUserName(Unknown Source)
+	at tools.perkinelmer.security.CustomUserService.loadUserByUsername(CustomUserService.java:25)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:114)
+	... 54 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	... 61 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 68 common frames omitted
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 78 common frames omitted
+2018-08-14 14:44:20.889 [http-nio-8880-exec-10] ERROR o.a.tomcat.jdbc.pool.ConnectionPool -Unable to create initial connections of pool.
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:167)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy78.findByUserName(Unknown Source)
+	at tools.perkinelmer.security.CustomUserService.loadUserByUsername(CustomUserService.java:25)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:114)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-08-14 14:44:20.893 [http-nio-8880-exec-10] ERROR o.s.s.w.a.UsernamePasswordAuthenticationFilter -An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:126)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:79)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447)
+	at com.sun.proxy.$Proxy70.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:167)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy78.findByUserName(Unknown Source)
+	at tools.perkinelmer.security.CustomUserService.loadUserByUsername(CustomUserService.java:25)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:114)
+	... 54 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+### The error may exist in file [C:\java\eclipse\workspace\WSManager\target\classes\mappers\UserMapper.xml]
+### The error may involve tools.perkinelmer.Mapper.UserMapper.findByUserName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	... 61 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 68 common frames omitted
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 172.26.11.18, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 78 common frames omitted
+2018-08-14 14:46:35.706 [http-nio-8880-exec-9] ERROR t.p.S.S.WorkFlowServiceImpl -数据更新失败
+2018-08-14 14:47:58.380 [http-nio-8880-exec-10] INFO  t.p.S.ServiceImpl.UserServiceImpl -成功删除用户：0个
+2018-08-14 15:44:11.614 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 15760 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 15:44:11.636 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 15:44:12.422 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 15:44:12 CST 2018]; root of context hierarchy
+2018-08-14 15:44:15.672 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76ca8690] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 15:44:17.227 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8880 (http)
+2018-08-14 15:44:17.271 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 15:44:17.274 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 15:44:17.534 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 15:44:17.534 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 5113 ms
+2018-08-14 15:44:18.184 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:44:18.185 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:44:18.186 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:44:18.186 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:44:18.192 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 15:44:18.193 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 15:44:19.095 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'customUserService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'tools.perkinelmer.security.CustomUserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-08-14 15:44:19.104 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
+2018-08-14 15:44:19.444 [main] WARN  o.s.boot.SpringApplication -Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available)
+2018-08-14 15:44:19.812 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field customUserService in tools.perkinelmer.Config.WebSecurityConfig required a bean of type 'tools.perkinelmer.security.CustomUserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'tools.perkinelmer.security.CustomUserService' in your configuration.
+
+2018-08-14 15:45:26.627 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 13192 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 15:45:26.638 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 15:45:27.345 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 15:45:27 CST 2018]; root of context hierarchy
+2018-08-14 15:45:30.087 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$377c319a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 15:45:31.535 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8880 (http)
+2018-08-14 15:45:31.567 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 15:45:31.569 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 15:45:31.870 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 15:45:31.873 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4528 ms
+2018-08-14 15:45:32.408 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:45:32.429 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:45:32.429 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:45:32.442 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:45:32.444 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 15:45:32.445 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 15:45:35.034 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 15:45:35.035 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 15:45:35.035 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 15:45:35.035 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 15:45:35.275 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42c12b3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@b1b471, org.springframework.security.web.header.HeaderWriterFilter@33ec2c0c, org.springframework.security.web.authentication.logout.LogoutFilter@7c8874ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65cc5252, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f1afe8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a0b901c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dbfa972, org.springframework.security.web.session.SessionManagementFilter@3887c7d7, org.springframework.security.web.access.ExceptionTranslationFilter@7c588adc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cbb7a7d]
+2018-08-14 15:45:35.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 15:45:27 CST 2018]; root of context hierarchy
+2018-08-14 15:45:35.684 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 15:45:35.686 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.686 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 15:45:35.687 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.691 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 15:45:35.699 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:45:35.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 15:45:35.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 15:45:35.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.705 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 15:45:35.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 15:45:35.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 15:45:35.719 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.721 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 15:45:35.723 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.723 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 15:45:35.726 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 15:45:35.727 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.727 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 15:45:35.728 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 15:45:35.728 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 15:45:35.730 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 15:45:35.732 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 15:45:35.733 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.733 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:45:35.735 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 15:45:35.736 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 15:45:35.739 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 15:45:35.744 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 15:45:35.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 15:45:35.750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:45:35.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:45:35.790 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 15:45:35.790 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 15:45:35.823 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:45:35.824 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:45:35.920 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:45:37.599 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 15:45:37.913 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8880 (http)
+2018-08-14 15:45:37.924 [main] INFO  tools.perkinelmer.Application -Started Application in 12.041 seconds (JVM running for 13.323)
+2018-08-14 15:47:37.441 [http-nio-8880-exec-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:47:37.442 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:47:37.521 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 79 ms
+2018-08-14 15:48:24.779 [http-nio-8880-exec-8] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder -Encoded password does not look like BCrypt
+2018-08-14 15:53:44.319 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 20732 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 15:53:44.344 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 15:53:45.120 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 15:53:45 CST 2018]; root of context hierarchy
+2018-08-14 15:53:48.768 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b94e1a72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 15:53:50.543 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8880 (http)
+2018-08-14 15:53:50.572 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 15:53:50.574 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 15:53:50.847 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 15:53:50.848 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 5728 ms
+2018-08-14 15:53:51.299 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:53:51.300 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:53:51.300 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:53:51.301 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:53:51.302 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 15:53:51.303 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 15:53:53.767 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 15:53:53.768 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 15:53:53.770 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 15:53:53.770 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 15:53:54.027 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1595d2b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f38f084, org.springframework.security.web.header.HeaderWriterFilter@38732364, org.springframework.security.web.authentication.logout.LogoutFilter@4c18516, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fd9fb34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@372f0a99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@526f6427, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20349058, org.springframework.security.web.session.SessionManagementFilter@48cd319d, org.springframework.security.web.access.ExceptionTranslationFilter@35025a0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d2708a7]
+2018-08-14 15:53:54.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 15:53:45 CST 2018]; root of context hierarchy
+2018-08-14 15:53:54.631 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 15:53:54.632 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.633 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 15:53:54.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 15:53:54.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:53:54.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 15:53:54.739 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 15:53:54.740 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 15:53:54.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 15:53:54.746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.748 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 15:53:54.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 15:53:54.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 15:53:54.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 15:53:54.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 15:53:54.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 15:53:54.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 15:53:54.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 15:53:54.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 15:53:54.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 15:53:54.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 15:53:54.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 15:53:54.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 15:53:54.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 15:53:54.781 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 15:53:54.785 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:53:54.788 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:53:54.827 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 15:53:54.828 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 15:53:54.859 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:53:54.860 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:53:54.989 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:53:56.778 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 15:53:56.942 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8880 (http)
+2018-08-14 15:53:56.951 [main] INFO  tools.perkinelmer.Application -Started Application in 13.424 seconds (JVM running for 14.871)
+2018-08-14 15:54:00.482 [http-nio-8880-exec-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:54:00.482 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:54:00.540 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2018-08-14 16:02:35.529 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 10452 (C:\java\eclipse\workspace\WSManager\target\classes started by wangj01052 in C:\java\eclipse\workspace\WSManager)
+2018-08-14 16:02:35.541 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2018-08-14 16:02:36.118 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 16:02:36 CST 2018]; root of context hierarchy
+2018-08-14 16:02:38.664 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d02a86fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-14 16:02:40.671 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8880 (http)
+2018-08-14 16:02:40.693 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-08-14 16:02:40.695 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-08-14 16:02:40.936 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring embedded WebApplicationContext
+2018-08-14 16:02:40.937 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4819 ms
+2018-08-14 16:02:41.400 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 16:02:41.401 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 16:02:41.402 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 16:02:41.402 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 16:02:41.406 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-08-14 16:02:41.407 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-14 16:02:43.978 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.js'], []
+2018-08-14 16:02:43.979 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.css'], []
+2018-08-14 16:02:43.980 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.jpg'], []
+2018-08-14 16:02:43.980 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: Ant [pattern='/**/*.png'], []
+2018-08-14 16:02:44.184 [main] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af2f846, org.springframework.security.web.context.SecurityContextPersistenceFilter@2faa55bb, org.springframework.security.web.header.HeaderWriterFilter@57151b3a, org.springframework.security.web.authentication.logout.LogoutFilter@18dcb8a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@706f6d26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d1d9d73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a84788f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6af65f29, org.springframework.security.web.session.SessionManagementFilter@2dff7085, org.springframework.security.web.access.ExceptionTranslationFilter@646cd766, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21f7e537]
+2018-08-14 16:02:44.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28b46423: startup date [Tue Aug 14 16:02:36 CST 2018]; root of context hierarchy
+2018-08-14 16:02:44.517 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[addAccount]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.addAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.518 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[editAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.editAccountById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.519 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[getAccountData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.AccountController.getAccountData(int,int)
+2018-08-14 16:02:44.520 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/account],params=[deleteAccountById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.AccountController.deleteAccountById(java.lang.String)
+2018-08-14 16:02:44.524 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/calllog],params=[getCallLogData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.CallLogsController.getCallLogData(int,int)
+2018-08-14 16:02:44.528 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/main/logout]}" onto public void tools.perkinelmer.Controller.MainController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 16:02:44.530 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRolesData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.RoleController.getAllRolesData(int,int)
+2018-08-14 16:02:44.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAllRoles]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.getAllRoles()
+2018-08-14 16:02:44.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[deleteRoleById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.deleteRoleById(java.lang.String)
+2018-08-14 16:02:44.532 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.editUserById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.532 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[addRole]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.RoleController.addRole(java.lang.String,java.lang.String)
+2018-08-14 16:02:44.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/role],params=[getAuthoritysByRoleId]}" onto public com.alibaba.fastjson.JSONArray tools.perkinelmer.Controller.RoleController.getAuthoritysByRoleId(int)
+2018-08-14 16:02:44.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[addService]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.addService(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[editServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.editServiceById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[getServiceData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.ServiceController.getServiceData(int,int)
+2018-08-14 16:02:44.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/service],params=[deleteServiceById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.ServiceController.deleteServiceById(java.lang.String)
+2018-08-14 16:02:44.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[addSubScription]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.addSubScription(java.lang.String,java.lang.String)
+2018-08-14 16:02:44.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubScriptionData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.SubScriptionController.getSubScriptionData(int,int)
+2018-08-14 16:02:44.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[editSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.editSubScriptionById(java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.542 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[deleteSubScriptionById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.deleteSubScriptionById(java.lang.String)
+2018-08-14 16:02:44.542 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/subscription],params=[getSubscriptionInfoDetail]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.SubScriptionController.getSubscriptionInfoDetail()
+2018-08-14 16:02:44.543 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[getUserData]}" onto public com.alibaba.fastjson.JSONObject tools.perkinelmer.Controller.UserController.getUserData(int,int)
+2018-08-14 16:02:44.544 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[editUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.editUserById(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.544 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[addUser]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-08-14 16:02:44.544 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user],params=[deleteUserById]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.UserController.deleteAccountById(java.lang.String)
+2018-08-14 16:02:44.545 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[getWorkflowData]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.getWorkflowData(java.lang.String)
+2018-08-14 16:02:44.546 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[addWorkFlow]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.addWorkFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 16:02:44.558 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[deleteWorkFlowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.deleteAccountById(java.lang.String,java.lang.String)
+2018-08-14 16:02:44.559 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[editWorkflowByWorkFlowName]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.editWorkflowByWorkFlowName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String)
+2018-08-14 16:02:44.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/workflow],params=[updateWorkFlowState]}" onto public tools.perkinelmer.entity.Result tools.perkinelmer.Controller.WorkFlowController.updateWorkFlowState(java.lang.String,java.lang.Integer,java.lang.String)
+2018-08-14 16:02:44.567 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 16:02:44.573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 16:02:44.604 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 16:02:44.605 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-14 16:02:44.636 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 16:02:44.636 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 16:02:44.724 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 16:02:46.125 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-08-14 16:02:46.281 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8880 (http)
+2018-08-14 16:02:46.291 [main] INFO  tools.perkinelmer.Application -Started Application in 11.382 seconds (JVM running for 13.003)
+2018-08-14 16:02:48.908 [http-nio-8880-exec-1] INFO  o.a.c.c.C.[.[localhost].[/WSManager] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 16:02:48.909 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 16:02:48.972 [http-nio-8880-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 63 ms

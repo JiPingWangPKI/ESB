@@ -1,0 +1,77 @@
+2018-07-02 11:53:50.017 [pool-2-thread-1] ERROR tools.perkinelmer.job.TimedTask -org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 从字符串转换日期和/或时间时，转换失败。
+### The error may involve tools.perkinelmer.mapper.CommMapper.commInsertSql-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO wsm.dbo.CallLogs(RequestId,ServiceName,RequestIPAddress,SoapAction,StartDt,EndDt,WSInterval,MessageInfo,MessageResponse,RemoteServer,StreamBaseServer,Status,MessageType,SubScription_Id,WorkFlowName)VALUES('0133f4a9-4b8f-4786-a8ec-7160e39a1bfb','/MedicalServiceESB.asmx','172.26.10.54','http://tempuri.org/ESP_Input','2018-06-29 13:47:25.706+0800','2018-06-29 13:47:26.212+0800',493,'<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ESP_Input xmlns="http://tempuri.org/"><user>RuiKe</user><password>eea79c4e7f1c453d866bcb0bbd22138e</password><methodCode>EMR-ET-S02</methodCode><methodName>SynchReceiveInfo</methodName><parameter>&lt;CallInfo&gt;&lt;ETONo&gt;9690890&lt;/ETONo&gt;&lt;ETODetailNo&gt;10898322&lt;/ETODetailNo&gt;&lt;PerformedBy&gt;33620362&lt;/PerformedBy&gt;&lt;Technician&gt;RIS&lt;/Technician&gt;&lt;StatusFlag&gt;1&lt;/StatusFlag&gt;&lt;SysFlag&gt;1&lt;/SysFlag&gt;&lt;/CallInfo&gt; </parameter></ESP_Input></soap:Body></soap:Envelope>','<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ESP_InputResponse xmlns="http://tempuri.org/"><ESP_InputResult>&lt;CallInfo&gt;&lt;ErrorCode&gt;0&lt;/ErrorCode&gt;&lt;ErrorInfo&gt;&lt;/ErrorInfo&gt;&lt;DetailInfo&gt;&lt;/DetailInfo&gt;&lt;/CallInfo&gt;</ESP_InputResult></ESP_InputResponse></soap:Body></soap:Envelope> ','172.26.82.208:2210','172.26.11.18:8882','Succ','SOAP1.1',1,'8882_RISToHIS')
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: 从字符串转换日期和/或时间时，转换失败。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [241]; 从字符串转换日期和/或时间时，转换失败。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 从字符串转换日期和/或时间时，转换失败。
+2018-08-03 11:07:58.842 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler [http-nio-7000]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+2018-08-03 11:07:58.882 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-7000]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-7000]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at tools.perkinelmer.Application.main(Application.java:16)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2018-08-03 11:07:59.075 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 7000 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 7000, or configure this application to listen on another port.
+

@@ -1,0 +1,90 @@
+2019-12-11 09:56:53.721 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 13400 (C:\java\eclipse\workspace\PKISignalServer\target\classes started by wangj01052 in C:\java\eclipse\workspace\PKISignalServer)
+2019-12-11 09:56:53.749 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2019-12-11 09:56:53.848 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@698122b2: startup date [Wed Dec 11 09:56:53 CST 2019]; root of context hierarchy
+2019-12-11 09:56:57.081 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a97320d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-11 09:56:58.168 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 7000 (http)
+2019-12-11 09:56:58.247 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2019-12-11 09:56:58.250 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-12-11 09:56:58.664 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring embedded WebApplicationContext
+2019-12-11 09:56:58.667 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4818 ms
+2019-12-11 09:56:59.348 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-11 09:56:59.358 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-11 09:56:59.360 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-11 09:56:59.362 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-11 09:56:59.364 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-11 09:57:01.260 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@698122b2: startup date [Wed Dec 11 09:56:53 CST 2019]; root of context hierarchy
+2019-12-11 09:57:01.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/switchSBServiceState]}" onto public void tools.perkinelmer.controller.ApiController.switchService(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 09:57:01.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/getWorkflowData]}" onto public void tools.perkinelmer.controller.ApiController.getWorkflowData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-12-11 09:57:01.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/modifyWorkFlowParams]}" onto public void tools.perkinelmer.controller.ApiController.modifyWorkFlowParams(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 09:57:01.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-11 09:57:01.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-11 09:57:01.539 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 09:57:01.542 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 09:57:01.678 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 09:57:02.755 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-12-11 09:57:02.783 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-11 09:57:03.551 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 7000 (http)
+2019-12-11 09:57:03.559 [main] INFO  tools.perkinelmer.Application -Started Application in 10.464 seconds (JVM running for 13.029)
+2019-12-11 09:57:48.810 [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-11 09:57:48.812 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-11 09:57:48.866 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2019-12-11 10:08:34.073 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 29792 (C:\java\eclipse\workspace\PKISignalServer\target\classes started by wangj01052 in C:\java\eclipse\workspace\PKISignalServer)
+2019-12-11 10:08:34.083 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2019-12-11 10:08:34.165 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a5bd950: startup date [Wed Dec 11 10:08:34 CST 2019]; root of context hierarchy
+2019-12-11 10:08:35.761 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6624a93c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-11 10:08:36.470 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 7000 (http)
+2019-12-11 10:08:36.488 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2019-12-11 10:08:36.489 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-12-11 10:08:36.700 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring embedded WebApplicationContext
+2019-12-11 10:08:36.703 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2538 ms
+2019-12-11 10:08:37.071 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-11 10:08:37.083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-11 10:08:37.083 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-11 10:08:37.084 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-11 10:08:37.085 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-11 10:08:38.357 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a5bd950: startup date [Wed Dec 11 10:08:34 CST 2019]; root of context hierarchy
+2019-12-11 10:08:38.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/switchSBServiceState]}" onto public void tools.perkinelmer.controller.ApiController.switchService(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 10:08:38.469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/getWorkflowData]}" onto public void tools.perkinelmer.controller.ApiController.getWorkflowData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-12-11 10:08:38.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/modifyWorkFlowParams]}" onto public void tools.perkinelmer.controller.ApiController.modifyWorkFlowParams(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 10:08:38.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-11 10:08:38.483 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-11 10:08:38.553 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:08:38.554 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:08:38.640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:08:39.408 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-12-11 10:08:39.434 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-11 10:08:40.384 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 7000 (http)
+2019-12-11 10:08:40.392 [main] INFO  tools.perkinelmer.Application -Started Application in 6.88 seconds (JVM running for 9.538)
+2019-12-11 10:08:45.192 [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-11 10:08:45.193 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-11 10:08:45.241 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2019-12-11 10:13:19.614 [main] INFO  tools.perkinelmer.Application -Starting Application on SHALL940 with PID 30616 (C:\java\eclipse\workspace\PKISignalServer\target\classes started by wangj01052 in C:\java\eclipse\workspace\PKISignalServer)
+2019-12-11 10:13:19.628 [main] INFO  tools.perkinelmer.Application -The following profiles are active: sit
+2019-12-11 10:13:19.711 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13f17eb4: startup date [Wed Dec 11 10:13:19 CST 2019]; root of context hierarchy
+2019-12-11 10:13:21.463 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f342689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-11 10:13:22.199 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 7000 (http)
+2019-12-11 10:13:22.236 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2019-12-11 10:13:22.239 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-12-11 10:13:22.506 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring embedded WebApplicationContext
+2019-12-11 10:13:22.508 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2797 ms
+2019-12-11 10:13:22.884 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-11 10:13:22.896 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-11 10:13:22.897 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-11 10:13:22.898 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-11 10:13:22.899 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-11 10:13:24.479 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13f17eb4: startup date [Wed Dec 11 10:13:19 CST 2019]; root of context hierarchy
+2019-12-11 10:13:24.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/modifyWorkFlowParams]}" onto public void tools.perkinelmer.controller.ApiController.modifyWorkFlowParams(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 10:13:24.792 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/switchSBServiceState]}" onto public void tools.perkinelmer.controller.ApiController.switchService(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2019-12-11 10:13:24.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/Api/getWorkflowData]}" onto public void tools.perkinelmer.controller.ApiController.getWorkflowData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-12-11 10:13:24.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-11 10:13:24.808 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-11 10:13:24.882 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:13:24.883 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:13:24.970 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-11 10:13:25.769 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-12-11 10:13:25.798 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-11 10:13:26.600 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 7000 (http)
+2019-12-11 10:13:26.606 [main] INFO  tools.perkinelmer.Application -Started Application in 7.511 seconds (JVM running for 10.096)
+2019-12-11 10:13:40.830 [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[.[/PKISignalServer] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-11 10:13:40.831 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-11 10:13:40.885 [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
