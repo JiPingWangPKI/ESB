@@ -7,4 +7,4 @@
     找到根目录下target目录下的PKISignalServer.jar包
     由于这个jar包中有启动关闭window service的功能，所以需要具有管理员权限，所以我们需要管理员角色打开命令窗口运行这个jar包：java -jar PKISignalServer.jar路径（[如果需要将其运行为windowservice](https://www.cnblogs.com/xiaoping1993/p/11906068.html)请参考）
 # 三：配置手册
-    ![PKISignalESBServer配置.png](https://github.com/JiPingWangPKI/ESB/raw/master/resource/PKISignalESBServer配置.png)
+![PKISignalESBServer配置.png](https://github.com/JiPingWangPKI/ESB/raw/master/resource/PKISignalESBServer配置.png)
