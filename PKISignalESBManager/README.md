@@ -26,6 +26,7 @@ MyBatis|ORM框架|http://www.mybatis.org/mybatis-3/zh/index.html
 统计分析：spotfire中离线数据，实时数据的分析和预警
 用户配置、角色配置：系统权限配置
 workFlow配置：由于ESB接入系统我们为了区分开来会单独开一个ESB服务节点，就是我们这里所谓的worfFlow节点，在这里我们可以控制每个ESB服务的参数、开关、新增删除等操作、功能很管理员谨慎操作
+新增workFLow配置功能：获得修改LiveView的端口、liveViewUserName,liveViewPassWord的能力
 
 这里提供部分业务图：
 

@@ -51,8 +51,8 @@ public class ApiController {
 	 * @return
 	 */
 	@RequestMapping("modifyWorkFlowParams")
-	public void modifyWorkFlowParams(String serviceName,HttpServletRequest request,HttpServletResponse response,@RequestParam(name="targetIp")String targetIp,@RequestParam(name="platformIp")String platformIp,@RequestParam(name="platformIp_vip")String platformIp_vip,@RequestParam(name="requestIp")String requestIp,@RequestParam(name="authority")String authority,@RequestParam(name="workFlowName")String workFlowName,@RequestParam(name="callback")String callback){
-		Result result = apiService.modifyWorkFlowParams(serviceName,targetIp,platformIp,platformIp_vip,requestIp,authority,workFlowName);
+	public void modifyWorkFlowParams(String serviceName,HttpServletRequest request,HttpServletResponse response,@RequestParam(name="targetIp")String targetIp,@RequestParam(name="platformIp")String platformIp,@RequestParam(name="platformIp_vip")String platformIp_vip,@RequestParam(name="requestIp")String requestIp,@RequestParam(name="authority")String authority,@RequestParam(name="workFlowName")String workFlowName,@RequestParam(name="liveViewPort")String liveViewPort,@RequestParam(name="liveViewUserName")String liveViewUserName,@RequestParam(name="liveViewPassWord")String liveViewPassWord,@RequestParam(name="callback")String callback){
+		Result result = apiService.modifyWorkFlowParams(serviceName,targetIp,platformIp,platformIp_vip,requestIp,authority,workFlowName,liveViewPort,liveViewUserName,liveViewPassWord);
 		String jsoncallback = callback + "({'result':"+result.getJsonStr()+"})";
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");

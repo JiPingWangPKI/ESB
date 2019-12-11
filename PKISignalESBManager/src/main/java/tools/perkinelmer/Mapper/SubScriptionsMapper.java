@@ -41,7 +41,7 @@ public interface SubScriptionsMapper {
 	@Update("Update wsm.dbo.subscriptions set account_id=${Account_Id} ,service_id=${Service_Id}  where id=${id}")
 	Integer updataSubScriptions(@Param("id")String Id, @Param("Account_Id")String Account_Id,@Param("Service_Id") String Service_Id);
 
-	@Insert("insert into wsm.dbo.subscriptions(Account_Id,Service_Id) value(${Account_Id},${Service_Id})")
+	@Insert("insert into wsm.dbo.subscriptions(Account_Id,Service_Id) values(${Account_Id},${Service_Id})")
 	Integer addSubScriptions(@Param("Account_Id")String Account_Id,@Param("Service_Id") String Service_Id);
 
 	

@@ -1,6 +1,1 @@
-2019-12-10 17:30:07.834 [http-nio-7000-exec-1] ERROR t.p.s.serviceImpl.ApiServiceImpl -java.util.regex.PatternSyntaxException: Illegal repetition near index 44
-\s*<parameter name="UrlReplaceFrom" value="{.*}"/>\s*<parameter name="UrlReplaceFrom1" value="{.*}"/>\s*<parameter name="UrlReplaceTo" value="{.*}"/>\s*<parameter name="RequestIPAddress" value="{.*}"/>\s*<parameter name="UseAuthoritys" value="{.*}"/>\s*<parameter name="WorkFlowName" value="{.*}"/>
-                                            ^
-2019-12-10 17:32:10.392 [http-nio-7000-exec-2] ERROR t.p.s.serviceImpl.ApiServiceImpl -java.util.regex.PatternSyntaxException: Illegal repetition near index 44
-\s*<parameter name="UrlReplaceFrom" value="{.*}"/>\s*<parameter name="UrlReplaceFrom1" value="{.*}"/>\s*<parameter name="UrlReplaceTo" value="{.*}"/>\s*<parameter name="RequestIPAddress" value="{.*}"/>\s*<parameter name="UseAuthoritys" value="{.*}"/>\s*<parameter name="WorkFlowName" value="{.*}"/>
-                                            ^
+2019-12-11 17:43:34.814 [http-nio-7000-exec-1] ERROR t.p.s.serviceImpl.ApiServiceImpl -java.io.FileNotFoundException: C:\java\streambase\PKISignals.PKIESB_SB10+\application\shared\clientApiListener.conf (系统找不到指定的路径。)

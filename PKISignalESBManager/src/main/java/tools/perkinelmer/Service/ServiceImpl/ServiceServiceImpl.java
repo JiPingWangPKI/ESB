@@ -27,8 +27,8 @@ public class ServiceServiceImpl implements ServiceService {
 		result.put("code", ResultEnum.SUCCESS.getCode());
 		result.put("msg", "getdata success！");
 		try {
-			int start = (page-1)*limit;
-			int end = start+limit-1;
+			int start = (page-1)*limit+1;
+			int end = start+limit;
 			sum = serviceMapper.getServiceSum();
 			rows = serviceMapper.getServiceData(start,end);
 			result.put("count", sum);

@@ -16,10 +16,13 @@ public interface ApiService {
 	 * @param targetId
 	 * @param platformId
 	 * @param authority
+	 * @param liveViewPassWord 
+	 * @param liveViewUserName 
+	 * @param liveViewPort 
 	 * @param sbappId
 	 * @return
 	 */
-	Result modifyWorkFlowParams(String serviceName,String targetIp, String platformIp,String platformIp_vip,String requestIp ,String authority, String workFlowName);
+	Result modifyWorkFlowParams(String serviceName,String targetIp, String platformIp,String platformIp_vip,String requestIp ,String authority, String workFlowName, String liveViewPort, String liveViewUserName, String liveViewPassWord);
 
 	/**
 	 * 获得所有的workflowp配置信息

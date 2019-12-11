@@ -41,7 +41,7 @@ public interface AccountMapper {
 	Integer updataAccount(@Param("id")String id, @Param("systemName")String systemName,@Param("Password") String Password, @Param("systemCode")String systemCode, @Param("contactName")String contactName, @Param("cellPhone")String cellphone,
 			@Param("email")String email, @Param("remark")String remark);
 
-	@Insert("insert into wsm.dbo.accounts(systemName,Password,systemCode,contactName,cellphone, email,remark) value(#{systemName},#{Password},#{systemCode},#{contactName},#{cellphone},#{email},#{remark})")
+	@Insert("insert into wsm.dbo.accounts(systemName,Password,systemCode,contactName,cellphone, email,remark) values(#{systemName},#{Password},#{systemCode},#{contactName},#{cellphone},#{email},#{remark})")
 	Integer addAccount(@Param("systemName")String systemName,@Param("Password")String Password, @Param("systemCode")String systemCode, @Param("contactName")String contactName, @Param("cellphone")String cellphone, @Param("email")String email,
 			@Param("remark")String remark);
 

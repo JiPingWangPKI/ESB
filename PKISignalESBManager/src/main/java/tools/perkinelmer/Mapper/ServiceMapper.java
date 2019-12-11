@@ -41,7 +41,7 @@ public interface ServiceMapper {
 	Integer updateService(@Param("id")String Id, @Param("ServiceName")String ServiceName,@Param("ServiceCode") String ServiceCode, @Param("MessageType")String MessageType, @Param("Remark")String Remark, @Param("ServiceAddress")String ServiceAddress,
 			@Param("ServiceNamespace")String ServiceNamespace);
 
-	@Insert("insert into wsm.dbo.services(ServiceName,ServiceCode,MessageType,Remark,ServiceAddress,ServiceNamespace) value(#{ServiceName},#{ServiceCode},#{MessageType},#{Remark},#{ServiceAddress},#{ServiceNamespace})")
+	@Insert("insert into wsm.dbo.services(ServiceName,ServiceCode,MessageType,Remark,ServiceAddress,ServiceNamespace) values(#{ServiceName},#{ServiceCode},#{MessageType},#{Remark},#{ServiceAddress},#{ServiceNamespace})")
 	Integer addService(@Param("ServiceName")String ServiceName,@Param("ServiceCode") String ServiceCode, @Param("MessageType")String MessageType, @Param("Remark")String Remark, @Param("ServiceAddress")String ServiceAddress,
 			@Param("ServiceNamespace")String ServiceNamespace);
 

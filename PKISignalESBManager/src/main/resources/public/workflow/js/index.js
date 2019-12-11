@@ -37,7 +37,10 @@ WSM.workflow.initAllWorkflow=function(form,layer,streambaseServer){
 							authority:data[i].authority==0?true:false,
 							highCostTimeSum:data[i].highCostTimeSum,
 							failRequestSum:data[i].failSum,
-							hangUpSum:3//以后可以添加
+							hangUpSum:3,//以后可以添加
+							liveViewPort:data[i].liveViewPort,
+							liveViewUserName:data[i].liveViewUserName,
+							liveViewPassWord:data[i].liveViewPassWord
 						};
 					var workflowhtml =
 						 "<div class='workflow small'>" +
@@ -74,6 +77,15 @@ WSM.workflow.initAllWorkflow=function(form,layer,streambaseServer){
 						 "	</div>" +
 						 "	<div class='workflow_useauthority'>" +
 						 "		<label class='workflow_useauthority_label'>权限验证已<span class='workflow_useauthority_content'>"+(workflow.authority?"开启":"关闭")+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewPort'>" +
+						 "		<label class='workflow_liveViewPort_label'>LiveView端口<span class='workflow_liveViewPort_content'>"+workflow.liveViewPort+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewUserName'>" +
+						 "		<label class='workflow_liveViewUserName_label'>LiveViewUserName<span class='workflow_liveViewUserName_content'>"+workflow.liveViewUserName+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewPassWord'>" +
+						 "		<label class='workflow_liveViewPassWord_label'>LiveViewPassWord<span class='workflow_liveViewPassWord_content'>"+workflow.liveViewPassWord+"</span></label>" +
 						 "	</div>" +
 						 " <div class='workflow_highcosttime'>" +
 						 "	 <label class='workflow_highcosttime_label'>高耗时警告（时间段,当天）<span class='layui-badge'>"+workflow.highCostTimeSum+"</span></label>" +
@@ -125,6 +137,9 @@ WSM.workflow.initAllWorkflow_new=function(form,layer,streambaseServer){
 							platformId:data[i].urlReplaceFrom,
 							platformId_vip:data[i].urlReplaceFrom1,
 							authority:data[i].authoritys=="true"?true:false,
+							liveViewPort:data[i].liveViewPort,
+							liveViewUserName:data[i].liveViewUserName,
+							liveViewPassWord:data[i].liveViewPassWord
 						};
 					var workflowhtml =
 						 "<div class='workflow small'>" +
@@ -165,6 +180,15 @@ WSM.workflow.initAllWorkflow_new=function(form,layer,streambaseServer){
 						 "	</div>" +
 						 "	<div class='workflow_useauthority'>" +
 						 "		<label class='workflow_useauthority_label'>权限验证已：<span class='workflow_useauthority_content'>"+(workflow.authority?"开启":"关闭")+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewPort'>" +
+						 "		<label class='workflow_liveViewPort_label'>LiveView端口：<span class='workflow_liveViewPort_content'>"+workflow.liveViewPort+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewUserName'>" +
+						 "		<label class='workflow_liveViewUserName_label'>LiveViewUserName：<span class='workflow_liveViewUserName_content'>"+workflow.liveViewUserName+"</span></label>" +
+						 "	</div>" +
+						 "	<div class='workflow_liveViewPassWord'>" +
+						 "		<label class='workflow_liveViewPassWord_label'>LiveViewPassWord：<span class='workflow_liveViewPassWord_content'>"+workflow.liveViewPassWord+"</span></label>" +
 						 "	</div>" +
 						 " <button class='layui-btn layui-btn-xs editworkflow'>修改配置</button>" +
 						 "</div>";
@@ -279,6 +303,9 @@ WSM.workflow.bind = function(layer,form){
 			streambaseIp = $(this).parent().find("[class='workflow_serviceipmy_content']").text(),
 			streambaseIp_vip = $(this).parent().find("[class='workflow_serviceipmy_vip_content']").text(),
 			useAthority = $(this).parent().find("[class='workflow_useauthority_content']").text();
+			liveViewPort= $(this).parent().find("[class='workflow_liveViewPort_content']").text();
+			liveViewUserName= $(this).parent().find("[class='workflow_liveViewUserName_content']").text();
+			liveViewPassWord= $(this).parent().find("[class='workflow_liveViewPassWord_content']").text();
 		$("#Name").val(name);
 		$("#ServiceName").val(serviceName),
 		$("#WorkFlowName").val(workFlowName),
@@ -294,6 +321,9 @@ WSM.workflow.bind = function(layer,form){
 			$("#UseAuthority").next().removeClass('layui-form-onswitch'); 
 			$("#UseAuthority").next().find("em").text("关闭");
 		}
+		$("#LiveViewPort").val(liveViewPort);
+		$("#LiveViewUserName").val(liveViewUserName);
+		$("#LiveViewPassWord").val(liveViewPassWord);
 		layer.open({
 			type:1,
 			content:$('#operate'),
@@ -312,7 +342,10 @@ WSM.workflow.bind = function(layer,form){
 					platformIp_vip:$("#StreambaseIp_vip").val(),
 					authority:($("#UseAuthority").next().find("em").text()=="开启")?true:false,
 					state:$("#State")=="on"?0:1,
-					streambaseServer:$(".iptitle").text()
+					streambaseServer:$(".iptitle").text(),
+					liveViewPort:$("#LiveViewPort").val(),
+					liveViewUserName:$("#LiveViewUserName").val(),
+					liveViewPassWord:$("#LiveViewPassWord").val()
 				};
 				$.ajax({
 					async:true,
@@ -324,25 +357,9 @@ WSM.workflow.bind = function(layer,form){
 					jsonpCallback:"getResult",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以不写这个参数，jQuery会自动为你处理数据
 					success:function(result){
 						if(result.result.code==0){
-							//workflow配置本地
-							/*$.ajax({
-								async:true,
-								type:'post',
-								data:data,
-								url:'../workflow.do?editWorkflowByWorkFlowName',
-								success:function(data){
-									if(data.code==0){
-										WSM.workflow.initAllWorkflow_new(form,layer,streambaseServer);
-										layer.msg("workflow配置本地已保存");
-									}else{
-										layer.alert(data.msg);
-									}
-								},
-								error:function(){
-									layer.alert("workflow配置本地保存失败！");
-								}
-							});*/
 							layer.msg("服务配置修改成功！（配置生效需要服务重启）");
+							//重新加载一遍
+							WSM.workflow.initAllWorkflow_new(form,layer,streambaseServer);
 						}else{
 							layer.alert(result.result.msg);
 						}

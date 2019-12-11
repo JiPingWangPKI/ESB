@@ -104,9 +104,9 @@ public class ApiServiceImpl implements ApiService{
 	 * @param workFlowName 节点文件夹名称
 	 * @return
 	 */
-	private Result modifyWorkFlowParams_sb10(String targetIp, String platformIp,String platformIp_vip,String requestIp, String authority, String workFlowName) {
+	private Result modifyWorkFlowParams_sb10(String targetIp, String platformIp,String platformIp_vip,String requestIp, String authority, String workFlowName,String liveViewPort, String liveViewUserName, String liveViewPassWord) {
 		try {
-			//修改配置文件
+			//修改PKIWS.lvconf配置文件
 			String filePath = workflowBaseUrl_sb10+"\\"+workFlowName+"\\application\\fragments\\com.perkinelmer.PKISignals\\PKIWS.lvconf";
 			File file = new File(filePath);
 			BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
@@ -127,6 +127,42 @@ public class ApiServiceImpl implements ApiService{
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content);
 			bw.close();
+			//修改PKIWS.lvconf配置文件
+			String filePath2 = workflowBaseUrl_sb10+"\\"+workFlowName+"\\application\\shared\\clientApiListener.conf";
+			File file2 = new File(filePath2);
+			BufferedReader br2 = new BufferedReader(new FileReader(file2));//构造一个BufferedReader类来读取文件
+			StringBuilder deployConfigContent2 = new StringBuilder();
+			String s2 = null;
+			while((s2 = br2.readLine())!=null){//使用readLine方法，一次读一行
+				deployConfigContent2.append(s2+System.lineSeparator());
+			}
+			br2.close();
+			String content2 =deployConfigContent2.toString();
+			content2 = content2.replaceFirst("portNumber\\s*=\\s*[0-9]*","portNumber = "+liveViewPort);
+			//写配置文件中去
+			FileWriter fw2 = new FileWriter(file2);
+			BufferedWriter bw2 = new BufferedWriter(fw2);
+			bw2.write(content2);
+			bw2.close();
+			
+			//修改PKIWS.lvconf配置文件
+			String filePath3 = workflowBaseUrl_sb10+"\\"+workFlowName+"\\application\\shared\\authRealm.conf";
+			File file3 = new File(filePath3);
+			BufferedReader br3 = new BufferedReader(new FileReader(file3));//构造一个BufferedReader类来读取文件
+			StringBuilder deployConfigContent3 = new StringBuilder();
+			String s3 = null;
+			while((s3 = br3.readLine())!=null){//使用readLine方法，一次读一行
+				deployConfigContent3.append(s3+System.lineSeparator());
+			}
+			br3.close();
+			String content3 =deployConfigContent3.toString();
+			content3 = content3.replaceFirst("userName\\s*=\\s*\".*\"","userName = \""+liveViewUserName+"\"")
+					.replaceFirst("password\\s*=\\s*\".*\"","password =\""+liveViewPassWord+"\"");
+			//写配置文件中去
+			FileWriter fw3 = new FileWriter(file3);
+			BufferedWriter bw3 = new BufferedWriter(fw3);
+			bw3.write(content3);
+			bw3.close();
 	        return ResultUtil.success();
 		} catch (Exception e) {
 			log.error(e.toString());
@@ -156,8 +192,40 @@ public class ApiServiceImpl implements ApiService{
 				File file1 = new File(workflowDeployUrl);
 				if(file1.exists()) {
 					JSONObject jo = new JSONObject();
+					//拿liveView相关参数LiveViewPort,LiveViewUserName,LiveViewPassWord
+					String clientApiListenerPath = workflowBaseUrl_sb10+"\\"+fileName+"\\application\\shared\\clientApiListener.conf";
+					String authRealmPath = workflowBaseUrl_sb10+"\\"+fileName+"\\application\\shared\\authRealm.conf";
+					File clientApiListenerFile = new File(clientApiListenerPath);
+					File authRealmFile = new File(authRealmPath);
+					StringBuilder clientApiListenerContent = new StringBuilder();
+					StringBuilder authRealmContent = new StringBuilder();
+					BufferedReader clientApiListenerBr = new BufferedReader(new FileReader(clientApiListenerFile));
+					BufferedReader authRealmBr = new BufferedReader(new FileReader(authRealmFile));
+					String clientApiListenerS = null;
+					String authRealmS = null;
+					while((clientApiListenerS = clientApiListenerBr.readLine())!=null){//使用readLine方法，一次读一行
+						clientApiListenerContent.append(System.lineSeparator()+clientApiListenerS);
+					}
+					clientApiListenerBr.close();
+					String clientApiListenercontent =clientApiListenerContent.toString();
+					String clientApiListenerdeployRegex ="portNumber\\s*=\\s*([0-9]*)";
+					Pattern clientApiListenerdeployPattern = Pattern.compile(clientApiListenerdeployRegex);
+					Matcher clientApiListenerdeployMatcher = clientApiListenerdeployPattern.matcher(clientApiListenercontent);
+					clientApiListenerdeployMatcher.find();
+					String liveViewPort = clientApiListenerdeployMatcher.group(1);
+					while((authRealmS = authRealmBr.readLine())!=null){//使用readLine方法，一次读一行
+						authRealmContent.append(System.lineSeparator()+authRealmS);
+					}
+					authRealmBr.close();
+					String authRealmcontent =authRealmContent.toString();
+					String authRealmRegex ="userName\\s*=\\s*\"(.*)\"\\s*password\\s*=\\s*\"(.*)\"";
+					Pattern authRealmPattern = Pattern.compile(authRealmRegex);
+					Matcher authRealmMatcher = authRealmPattern.matcher(authRealmcontent);
+					authRealmMatcher.find();
+					String liveViewUserName = authRealmMatcher.group(1);
+					String liveViewPassWord = authRealmMatcher.group(2);
 					//获得配置文件中特定数据值
-					StringBuilder deployConfigContent = new StringBuilder();
+					StringBuilder deployConfigContent = new StringBuilder(); 
 					BufferedReader br = new BufferedReader(new FileReader(file1));//构造一个BufferedReader类来读取文件
 					String s = null;
 					while((s = br.readLine())!=null){//使用readLine方法，一次读一行
@@ -174,6 +242,10 @@ public class ApiServiceImpl implements ApiService{
 						jo.put("urlReplaceTo", deployMatcher.group(3).replace("&quot;", ""));
 						jo.put("requestIPAddress", deployMatcher.group(4).replace("&quot;", ""));
 						jo.put("authoritys", deployMatcher.group(5));
+						//拿liveView相关参数
+						jo.put("liveViewPort", liveViewPort);
+						jo.put("liveViewUserName", liveViewUserName);
+						jo.put("liveViewPassWord", liveViewPassWord);
 						result.add(jo);
 					}
 					//查询对应的服务有没有开启,特意指定了window servicename和节点文件夹之间的关系
@@ -254,6 +326,10 @@ public class ApiServiceImpl implements ApiService{
 					jo.put("workFlowName", fileName.replace(".sbdeploy", ""));
 					boolean serviceState = windowServiceState(windowServiceName);
 					jo.put("serviceState", serviceState);
+					//旧版本暂时不给提供LiveView功能
+					jo.put("liveViewPort", "00000");
+					jo.put("liveViewUserName", "");
+					jo.put("liveViewPassWord", "");
 					result.add(jo);
 				}
 			}
@@ -298,12 +374,12 @@ public class ApiServiceImpl implements ApiService{
 
 	@Override
 	public Result modifyWorkFlowParams(String serviceName,String targetIp, String platformIp, String platformIp_vip, String requestIp,
-			String authority, String workFlowName) {
+			String authority, String workFlowName,String liveViewPort, String liveViewUserName, String liveViewPassWord) {
 		Result result = new Result();
 		if(serviceName.contains("SB10")){
-			result = modifyWorkFlowParams_sb10(targetIp, platformIp, platformIp_vip, requestIp,authority, workFlowName);	
+			result = modifyWorkFlowParams_sb10(targetIp, platformIp, platformIp_vip, requestIp,authority, workFlowName,liveViewPort, liveViewUserName, liveViewPassWord);	
 		}else{
-			result = modifyWorkFlowParams_sb7(targetIp, platformIp, platformIp_vip, requestIp,authority, workFlowName);
+			result = modifyWorkFlowParams_sb7(targetIp, platformIp, platformIp_vip, requestIp,authority, workFlowName);//旧版本暂时不提供LiveView功能
 		}
 		return result;
 	}

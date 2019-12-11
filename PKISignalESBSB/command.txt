@@ -1,0 +1,11 @@
+注意：为了让ESB后台控制程序找到window服务和节点文件夹，安装时候特意指定节点文件夹名称为PKISiganls.{window service name}，为了和sb7安装的服务区别开来，SB10后面都用一个_SB10结尾
+安装为window service脚本
+epadmin install systemservice --name="PKIESB_SB10" --nodedirectory=C:\java\streambase --nodename=PKISignals.PKIESB_SB10 --application=PKISignals_app.zip --displayname=PKIESB_SB10 --startup=automatic
+卸载window service 脚本
+epadmin remove systemservice --name="PKIESB_SB10"
+
+修改ESB配置的方式有两个
+一：直接打开PKISignals_app.zip找到配置文件参考：https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBSB#%E4%B8%89%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C，再用这个心的打包文件安装window servce，这样安装后就是最新配置的workflow节点了
+二：window service 运行后会生成节点文件夹，在节点文件夹中找配置文件位置直接修改重启window service即可生效
+环境要求：
+java:推荐版本8试过版本13不行

@@ -57,7 +57,7 @@ WSM.subscription.initTable = function($tableId,table){
 		   {field:'SystemCode',title:'系统密码',sort:true},
 		   {field:'ServiceId',title:'服务ID',sort:true},
 		   {field:'ServiceName',title:'服务名称',sort:true},
-		   {field:'ServiceCode',title:'服务密码',sort:true},
+		   {field:'ServiceCode',title:'服务编码',sort:true},
 		   {title:'操作',toolbar:'#barSubScription',fixed:'right'}
 		]]
 	});

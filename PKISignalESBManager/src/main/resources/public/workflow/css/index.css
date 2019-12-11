@@ -7,11 +7,11 @@
   }
   .workflow.small {
     width: 230px;
-    height: 290px;
+    height: 320px;
   }
   .workflow.large {
     width: 300px;
-    height: 300px;
+    height: 320px;
   }
 .workflow {
     opacity: 1;
