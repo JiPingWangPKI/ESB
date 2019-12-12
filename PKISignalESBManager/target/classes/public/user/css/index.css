@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+.barAcount{display: none;}
+#operate{padding: 20px}
+.red{color: red;}
+.forroles {
+    float: left;
+    font-size: 8px;
+    border: 1px solid #ada4a4;
+    border-radius: 3px;
+    position: relative;
+}
+.roleName {
+    float: bottom;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.roleClear {position: absolute;right: 1px;top: 1px;cursor: pointer;}
+#forroles {
+    overflow: hidden;
+}

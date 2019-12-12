@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+.WSMFloat_right{float: right;}
+/*父类是浮动的怎么设置垂直居中 .WSMCenter_Vertical{top:100%} */
+.content_left_nav{height: 100%;display: inline-block;width:15%;background-color: #393D49;float:left;}
+.content_right{display: inline-block;float: left;width: 85%;height: 100%}
+.content{height:90vh;overflow-y:hidden;}
+.header{height: 10vh}
+.logo{height: 60px;margin-top: 5px;width: 170px}
+.collapsing{height: 100%;border: none;width: 10px;background-color: #000;}
+.WSMTabContent{margin: 0 !important;height: 100%}
+.layui-tab-item{height: 100%;padding: 20px}
+.rightMain{left: 360px; top: 66px; display: block;}
+.rightMenu {
+  position: absolute;
+  width: 120px;
+  line-height: 24px;
+  z-index: 999;
+  background: #FFF;
+  border: 1px solid #F2F2F2;
+  border-bottom: none;
+  border-radius: 3px;
+  display: none;
+}
+.rightMenu li {
+  display: block;
+  padding: 4px 10px;
+  color: #CCC;
+  border-bottom: 1px solid #F2F2F2;
+}
+.rightMenu li:hover {
+  background: #EEE;
+  color: #666;
+}
+dl{cursor: pointer;}

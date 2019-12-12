@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.perkinelmer</groupId>
+	<artifactId>PKISignalESBManager</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+	</parent>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+	         <groupId>org.springframework.security</groupId>
+	         <artifactId>spring-security-web</artifactId>
+	    </dependency>
+    	<dependency>
+         <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-config</artifactId>
+    	</dependency>
+		<dependency>
+            <groupId>org.thymeleaf.extras</groupId> 
+            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+        </dependency>
+		<!--支持 Web 应用开发，包含 Tomcat 和 spring-mvc。 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- 模板引擎 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!--springboot 集成Mybatis所需jar配置 start -->
+		<!--支持使用 JDBC 访问数据库 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!--Mysql,postgresql / DataSource -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+		</dependency>
+		<dependency>  
+	      <groupId>com.microsoft.sqlserver</groupId>  
+	      <artifactId>sqljdbc4</artifactId>  
+	      <version>4.0</version> 
+	    </dependency>  
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- httpclient工具 -->
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<!--springboot 集成Mybatis所需jar配置 end -->
+		<!--Json Support -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.43</version>
+		</dependency>
+	
+	</dependencies>
+		<build>
+		<finalName>WSManager</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+			          <nonFilteredFileExtensions>
+			               <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+			               <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+			               <nonFilteredFileExtension>woff2</nonFilteredFileExtension>
+			          </nonFilteredFileExtensions>
+			     </configuration>
+			</plugin>
+		</plugins>
+		<resources>
+            <resource>
+                 <directory>src/main/resources</directory>
+                 <filtering>true</filtering>
+                 <excludes>  
+                    <exclude>public/layui/font/**</exclude>  
+                    <exclude>application-dev.properties</exclude>
+					<exclude>application-sit.properties</exclude>
+					<exclude>application-prd1.properties</exclude>
+					<exclude>application-prd2.properties</exclude>
+                 </excludes>  
+            </resource>
+            <!-- fonts file cannot use filter as the data structure of byte file will be changed via filter -->
+            <resource>  
+                <directory>src/main/resources</directory>  
+               <filtering>false</filtering>  
+                <includes>  
+                    <include>public/layui/font/**</include>
+                    <include>application-${profiles.active}.properties</include>
+					<include>application.properties</include>
+                </includes>
+            </resource>  
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+	</build>
+	<!--配置远程仓库地址 -->
+	<repositories>
+		<repository>
+			<id>spring-milestone</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+	<!--配置远程仓库地址 -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestone</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<!-- 不同环境查找不同配置文件 -->
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<profiles.active>dev</profiles.active>
+				<maven.test.skip>true</maven.test.skip>
+			</properties>
+			<!-- <activation>
+				<activeByDefault>true</activeByDefault>
+			</activation> -->
+		</profile>
+		<profile>
+			<id>sit</id>
+			<properties>
+				<profiles.active>sit</profiles.active>
+				<maven.test.skip>true</maven.test.skip>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>prd1</id>
+			<properties>
+				<profiles.active>prd1</profiles.active>
+				<maven.test.skip>true</maven.test.skip>
+				<scope.jar>provided</scope.jar>
+			</properties>
+		</profile>
+		<profile>
+			<id>prd2</id>
+			<properties>
+				<profiles.active>prd2</profiles.active>
+				<maven.test.skip>true</maven.test.skip>
+				<scope.jar>provided</scope.jar>
+			</properties>
+		</profile>
+	</profiles>
+</project>

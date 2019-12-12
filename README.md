@@ -33,8 +33,12 @@
 配置负载均衡（[参考链接niginx配置负载均衡](https://www.cnblogs.com/qlqwjy/p/8536779.html)）:负载均衡搭建核心组件（简单方式）
 
 ## 3.2 安装使用（参考各自子项目的文档介绍）
-	1）PKISignalESBSB服务的安装配置
-	2）PKISignalServer安装配置
-	3）PKISIgnalManager安装配置
+	1）PKISignalESBSB服务的安装配置（推荐安装为window service）
+	2）PKISignalServer安装配置（推荐安装为window service）
+	3）PKISIgnalManager安装配置（推荐安装为window service）
 	4）spotfire的安装配置（不配置安装也可以主要用于分析用的）
 	PKISignalManager通过PKISignalServer管理PKISignalSBESB服务
+参考资料：
+[tomcat安装为window service](https://www.cnblogs.com/xiaoping1993/p/11906068.html)
+[springboot jar包安装为window service](https://www.cnblogs.com/xiaoping1993/p/11906068.html)
+[StreamBase 安装为window service](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBSB#streambase-serivce-runing-as-window-service)
