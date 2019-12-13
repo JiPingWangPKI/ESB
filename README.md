@@ -16,7 +16,7 @@
 
 2）[实时业务数据的LiveView平台](http://47.103.133.15:10080/)(username:xiaoping;password:xiaoping)
 
-3）[实时业务数据的spotfire预警平台](http://47.103.133.15:10080/lvweb/#/login)
+3）[实时业务数据的spotfire预警平台](http://47.103.133.15:90/spotfire/wp/analysis?file=/ESB/%E5%AE%9E%E6%97%B6%E5%88%86%E6%9E%90%E5%92%8C%E9%A2%84%E8%AD%A6CallLogs&waid=ZdxCFLCNfkyXwoAqCqM-V-12163271e0F210&wavid=0)
 
 4）[ESB后台管理系统](http://47.103.133.15:8888/WSManager/login)（username:admin;password:admin）
 
@@ -42,3 +42,6 @@
 [tomcat安装为window service](https://www.cnblogs.com/xiaoping1993/p/11906068.html)
 [springboot jar包安装为window service](https://www.cnblogs.com/xiaoping1993/p/11906068.html)
 [StreamBase 安装为window service](https://github.com/JiPingWangPKI/ESB/tree/master/PKISignalESBSB#streambase-serivce-runing-as-window-service)
+
+# 四：注意事项
+	PKISignalESBManager后台关系系统其中对于workflow节点的参数修改中lvUserName,lvPassWord只能看不能修改否则会出问题，但可以liveView改端口

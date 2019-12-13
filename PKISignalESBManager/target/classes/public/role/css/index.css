@@ -1,9 +1,0 @@
-@CHARSET "UTF-8";
-.barAcount{display: none;}
-#operate{padding: 20px}
-.red{color: red;}
-.xtree_contianer {
-    overflow: auto;
-    background-color: #fff;
-    height:150px
-}
